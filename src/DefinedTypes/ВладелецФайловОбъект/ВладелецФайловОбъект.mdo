@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DefinedType xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d62bdb25-f261-4282-aa72-52e2b107642c">
+  <producedTypes>
+    <containerType typeId="a6f19e1e-eddc-46a8-9673-bc617b329ffb" valueTypeId="6773ab78-976c-4cf8-9499-b2c28081344c"/>
+  </producedTypes>
+  <name>ВладелецФайловОбъект</name>
+  <synonym>
+    <key>ru</key>
+    <value>Владелец файлов объект</value>
+  </synonym>
+  <type>
+    <types>DocumentObject.ВыполнениеПроектов</types>
+    <types>DocumentObject.СогласованиеПроектов</types>
+    <types>CatalogObject.Контрагенты</types>
+    <types>CatalogObject.Проекты</types>
+    <types>DocumentObject.ПоступлениеОплатыОтКонтрагента</types>
+    <types>CatalogObject.ИдентификаторыОбъектовМетаданных</types>
+  </type>
+</mdclass:DefinedType>

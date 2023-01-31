@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a60c20cd-8cef-450d-b204-2490c0137f2a">
+  <producedTypes>
+    <selectionType typeId="5e57d117-31a6-4039-909d-9c94b6b2efe6" valueTypeId="86dcd3be-38d5-4472-814e-61bd586df9eb"/>
+    <listType typeId="6cae03b1-938f-46e1-a543-4b9f5524577f" valueTypeId="60575b42-400c-47d4-a869-b59b0e22a3d7"/>
+    <managerType typeId="3c92eda4-642e-4166-9594-5e89708d0a22" valueTypeId="efef59f2-22a1-48c1-bc6c-d9e96b88678b"/>
+    <recordSetType typeId="b6de5c75-14bb-4e8c-8628-65f98a92a8a7" valueTypeId="7373bf42-8862-471b-8b1e-c254ae2d5717"/>
+    <recordKeyType typeId="3ec2d032-20b2-4185-ba18-a767de5c8400" valueTypeId="78b516ea-4bb3-4e70-9bb5-a530ad47845c"/>
+    <recordType typeId="f624a694-3e64-4651-8f62-e3e2b3aadd20" valueTypeId="aa78163e-2283-4942-823a-f19bbe8f23a3"/>
+    <recordManagerType typeId="4d51a955-066f-4ec6-b5a3-ad973d2f984f" valueTypeId="8ee3df03-c119-425b-9c41-d76880873c21"/>
+  </producedTypes>
+  <name>УП_СтоимостьПроектов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Стоимость проектов (не используется)</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="a85f4e93-5b5f-45df-a012-8c3ce2e597bc">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="fa6c5856-7971-4be8-b609-fd6cea2f075e">
+    <name>АналитикаУчетаПоКонтрагентам</name>
+    <synonym>
+      <key>ru</key>
+      <value>Аналитика учета по контрагентам</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КлючиАналитикиУчетаПоКонтрагентам</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Определяет аналитику расчетов с клиентами.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="7f5534b6-559c-4825-986d-4d4a39274dcf">
+    <name>Валюта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Валюта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Валюты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

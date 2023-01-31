@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b8643a44-1423-44e6-8ce1-4fa286cba94e">
+  <name>ВзаиморасчетыСКонтрагентами</name>
+  <synonym>
+    <key>ru</key>
+    <value>Взаиморасчеты с контрагентами</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <content>Document.ВозвратДенежныхСредствКонтрагенту</content>
+  <content>Document.ПоступлениеОплатыОтКонтрагента</content>
+  <content>Document.ВыполнениеПроектов</content>
+  <content>Document.СогласованиеПроектов</content>
+  <content>AccumulationRegister.ВзаиморасчетыСКонтрагентами</content>
+  <content>AccumulationRegister.УП_РасчетыСКонтрагентами</content>
+  <content>Report.ПоступлениеДенежныхСредств</content>
+  <content>Constant.ИспользоватьБизнесРегионы</content>
+  <parentSubsystem>Subsystem.УправлениеПроектами</parentSubsystem>
+</mdclass:Subsystem>

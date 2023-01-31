@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6dce28fa-b7e0-4831-b6e7-f434069ff5c8">
+  <producedTypes>
+    <objectType typeId="6400d71a-0da3-4484-b3d3-90954ce0e5f4" valueTypeId="8ae25991-560b-40ca-94df-83ff3a98acd3"/>
+    <managerType typeId="669bc665-3237-409f-ab60-53db7d86ea7d" valueTypeId="321427c8-3a8f-424c-9075-51a0eec580fe"/>
+  </producedTypes>
+  <name>РассылкаСМС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Рассылка СМС</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.РассылкаСМС.Form.Форма</defaultForm>
+  <attributes uuid="9b94ffe5-31a3-42a8-b76b-f27c09e405ed">
+    <name>ИмяФайлаНаСервере</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя файла на сервере</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="26b41ff8-4a51-4ccb-9ef4-e97116110a41">
+    <name>ИмяФайла</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя файла</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="72487960-0544-4a28-bef7-8542e3001129">
+    <name>ПараметрыСеансаОбработки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Параметры сеанса обработки</value>
+    </synonym>
+    <type/>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="0785938f-4d8a-4cfc-a0d6-33ce6831cdc8">
+    <name>ВерсияБСП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Версия БСП</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="bb9d46e7-b2c7-4fde-90b0-93d025ed3036">
+    <name>ПутьКФормам</name>
+    <synonym>
+      <key>ru</key>
+      <value>Путь к формам</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>700</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="52e9a5f0-4e08-48ac-839d-84bf3a255805">
+    <name>НомерПервойСтроки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер первой строки</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="2b71e110-2101-4e55-812e-d124ea385895">
+    <name>НомерКолонкиТелефона</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер колонки телефона</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="5751706d-6732-4e33-b31b-546baed5b03d">
+    <name>НомерСИменемАдресата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер с именем адресата</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="0c07c6da-7250-40c9-a3c0-a8d0de5bb9a9">
+    <name>АдресФайла</name>
+    <synonym>
+      <key>ru</key>
+      <value>Адрес файла</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="bdf9e4d4-0cbb-4fbb-aefe-302736f9bd8c">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="e6c96a87-7fae-47f5-b654-20918dfe46f8">
+    <name>ФормаЗагрузкиИзExcel</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма загрузки из excel</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

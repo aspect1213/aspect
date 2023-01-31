@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5d9c0841-6ea6-48dc-a53b-9f19894750f8">
+  <producedTypes>
+    <objectType typeId="316059fd-1174-4f58-b80e-67d279d8ea51" valueTypeId="a09f1496-8f3b-4711-b4fd-16f6ac58f3f7"/>
+    <managerType typeId="3b5e4d9c-db22-4489-b652-0987430d4b59" valueTypeId="f00ce3de-f4bf-4a53-83aa-db4cc1c9dc3a"/>
+  </producedTypes>
+  <name>ВводКонтактнойИнформации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ввод контактной информации</value>
+  </synonym>
+  <defaultForm>DataProcessor.ВводКонтактнойИнформации.Form.ВводАдреса</defaultForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <forms uuid="86b5303b-d967-4bc6-b2da-066c5a58613f">
+    <name>ВводАдреса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ввод адреса</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="853b824d-9377-475f-913e-d02bd60f5f64">
+    <name>ВводТелефона</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ввод телефона</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="ee1f8545-ea64-41de-a29a-2d40e15d4f16">
+    <name>ВыборАдресаПоПочтовомуИндексу</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выбор адреса по почтовому индексу</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="25ba3c5d-ace1-43cd-987f-68364b9b6970">
+    <name>ВыборАдресаПоУровню</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выбор адреса по уровню</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="75ec7461-ec33-417a-bdb8-6337a8d08fb4">
+    <name>ВыборДома</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выбор дома</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="b8f5019e-b53f-4508-a042-bbadda2d1fd4">
+    <name>ВыборУлицы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выбор улицы</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="b250d233-70a0-4baf-8b7d-6e1d414a11b9">
+    <name>ЗагрузкаАдресногоКлассификатора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Загрузка адресного классификатора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="d5a73869-381e-4878-8db7-596643937202">
+    <name>ИсторияКонтактнойИнформации</name>
+    <synonym>
+      <key>ru</key>
+      <value>История контактной информации</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="0c5e261f-961e-4780-877a-06589400b88a">
+    <name>НаселенныйПунктАдреса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Населенный пункт адреса</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

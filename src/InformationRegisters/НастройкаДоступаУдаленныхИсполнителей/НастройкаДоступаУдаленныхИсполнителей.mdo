@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="178b7bcb-4e85-48b9-8a57-98a499cc0421">
+  <producedTypes>
+    <selectionType typeId="9b9c5f95-d6a4-457c-8e8e-78ef81fbad58" valueTypeId="6e78de37-8f98-4c60-80da-665dfe9b36e9"/>
+    <listType typeId="76c6bd95-9f88-4adc-8322-f7badf88d103" valueTypeId="4c3d75ac-16ed-4af6-889f-15ba917c7c05"/>
+    <managerType typeId="5d92a7ec-ce17-492d-bf6a-666cac54d838" valueTypeId="c0de2565-20fc-43b4-8b84-f9c32bb4f3b8"/>
+    <recordSetType typeId="ae868d10-344b-4955-8a44-b0feb38bd753" valueTypeId="1f1acf34-22c0-47a2-945e-7c99ae644177"/>
+    <recordKeyType typeId="bb9ac721-72dd-49e3-8ab4-4922843eab07" valueTypeId="249d7553-d297-4d02-8d49-732c30debd54"/>
+    <recordType typeId="31d11eb1-c1a1-4854-a29f-b59b62380d57" valueTypeId="28f66f4a-6d0f-4be5-93c7-602fd8deace0"/>
+    <recordManagerType typeId="03f8768a-880d-4712-a651-2bd172e5c082" valueTypeId="e9ee511f-a748-4060-ac16-b24b5b18149f"/>
+  </producedTypes>
+  <name>НастройкаДоступаУдаленныхИсполнителей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройка доступа удаленных исполнителей</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.НастройкаДоступаУдаленныхИсполнителей.Form.ФормаЗаписи</defaultRecordForm>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="566b9e7d-e1ff-493c-8bf9-c178df8f0c71">
+    <name>Исполнитель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Исполнитель</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Исполнители</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="0ae07229-cc41-4526-8e30-1b4635b251b3">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="e53c8a1b-af96-45fe-804b-7bc68cf09ddf">
+    <name>Клиент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Клиент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Клиенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.Контрагент</name>
+      <field>InformationRegister.НастройкаДоступаУдаленныхИсполнителей.Dimension.Контрагент</field>
+    </choiceParameterLinks>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="b73d1de8-a5da-4e1e-b345-9029058a3bbc">
+    <name>Проект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проект</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Проекты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.Клиент</name>
+      <field>InformationRegister.НастройкаДоступаУдаленныхИсполнителей.Dimension.Клиент</field>
+    </choiceParameterLinks>
+    <choiceParameterLinks>
+      <name>Отбор.Контрагент</name>
+      <field>InformationRegister.НастройкаДоступаУдаленныхИсполнителей.Dimension.Контрагент</field>
+    </choiceParameterLinks>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="2eca04e7-b199-406a-8431-4f9747156cc5">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

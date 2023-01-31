@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9bf4d4ed-51c6-4090-9db7-dbf8e2b26590">
+  <producedTypes>
+    <refType typeId="c28da335-872f-4201-88b2-07fbb1409083" valueTypeId="8e9afc6f-64f5-4f2b-9199-0a5bd3274200"/>
+    <listType typeId="91ae591d-faa2-4a3e-bd13-54e3f7b6cb85" valueTypeId="2615be55-d6f2-46ba-ad29-9f3463d74f86"/>
+    <managerType typeId="149ed541-7936-4436-bd20-8fa73af4b14e" valueTypeId="0778fc49-0f04-4ef4-861f-b3cbd8f06001"/>
+  </producedTypes>
+  <name>СостоянияПроектов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Состояния проектов</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="93f8051a-da2d-4b41-a365-fa842bec3830">
+    <name>Согласован</name>
+    <synonym>
+      <key>ru</key>
+      <value>Согласован</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="b054916f-0216-4852-9c5a-cdad6203a05b">
+    <name>Выполнен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выполнен</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="7ec2ee16-d2a7-486a-bea8-74c08992e166">
+    <name>Закрыт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Закрыт</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="68b4da4f-337d-4d62-9cf7-70bcba25d63a">
+    <name>Корректировки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Корректировки</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="022d0063-1ee8-4cb7-984a-18ce4e162084">
+  <producedTypes>
+    <objectType typeId="9603c2ce-22ac-4530-bf4f-ff7ab09dca8c" valueTypeId="bc85ef62-5324-4610-8c5b-3d6134f9500f"/>
+    <managerType typeId="2e111b33-9b25-4a7c-ba6a-e28c3e8da552" valueTypeId="ff88e014-8980-4a6c-b72b-b5f8e3d510c6"/>
+  </producedTypes>
+  <name>ПодборПроектов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Подбор проектов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ПодборПроектов.Form.Форма</defaultForm>
+  <tabularSections uuid="59a921da-67a3-4ae0-95ed-0f8947b2c731">
+    <producedTypes>
+      <objectType typeId="908bc7de-e662-4d44-b3e3-c2d2ee102d65" valueTypeId="961cc34a-c22e-4043-862e-5246c357f7fc"/>
+      <rowType typeId="775a48e7-62dc-4eb4-8469-aeec7db0c4bb" valueTypeId="1ef58bbc-ed6e-494d-bea4-ce8bf00eee88"/>
+    </producedTypes>
+    <name>Корзина</name>
+    <synonym>
+      <key>ru</key>
+      <value>Корзина</value>
+    </synonym>
+    <attributes uuid="45f848f5-6005-482a-84bb-8fab432ab9a2">
+      <name>Контрагент</name>
+      <synonym>
+        <key>ru</key>
+        <value>Контрагент</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Контрагенты</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="5970cf9e-4e47-4236-a3d6-f25dd934e72a">
+      <name>Клиент</name>
+      <synonym>
+        <key>ru</key>
+        <value>Клиент</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Клиенты</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="24f76564-f88a-4504-ac71-f96bd4fa7161">
+      <name>Проект</name>
+      <synonym>
+        <key>ru</key>
+        <value>Проект</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Проекты</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="1799d534-f68c-438c-9a5b-48b667895581">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

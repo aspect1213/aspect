@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВремяВыполнения_Факт</dataPath>
+			<field>ВремяВыполнения_Факт</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Факт</v8:content>
+				</v8:item>
+			</title>
+			<presentationExpression>УП_ОбщегоНазначения_Сервер.ПреобразоватьЧислоМинутВСтрокуВремени(ВремяВыполнения_Факт)</presentationExpression>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Шрифт</dcscor:parameter>
+					<dcscor:value xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" height="14" kind="WindowsFont"/>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВремяВыполнения_План</dataPath>
+			<field>ВремяВыполнения_План</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>План</v8:content>
+				</v8:item>
+			</title>
+			<presentationExpression>УП_ОбщегоНазначения_Сервер.ПреобразоватьЧислоМинутВСтрокуВремени(ВремяВыполнения_План)</presentationExpression>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Шрифт</dcscor:parameter>
+					<dcscor:value xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" height="14" kind="WindowsFont"/>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Год</dataPath>
+			<field>Год</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Год</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Месяц</dataPath>
+			<field>Месяц</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Месяц</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	КОНЕЦПЕРИОДА(УП_СостоянияПроектов_Согласован.Период, МЕСЯЦ) КАК ДатаСреза,
+	ГОД(УП_СостоянияПроектов_Согласован.Период) КАК Год,
+	МЕСЯЦ(УП_СостоянияПроектов_Согласован.Период) КАК Месяц,
+	УП_СостоянияПроектов_Согласован.АналитикаУчетаПоКонтрагентам КАК АналитикаУчетаПоКонтрагентам
+ПОМЕСТИТЬ ВТ_СогласованныеПроекты
+ИЗ
+	РегистрСведений.УП_СостоянияПроектов КАК УП_СостоянияПроектов_Согласован
+ГДЕ
+	УП_СостоянияПроектов_Согласован.Состояние = ЗНАЧЕНИЕ(Перечисление.СостоянияПроектов.Согласован)
+
+СГРУППИРОВАТЬ ПО
+	КОНЕЦПЕРИОДА(УП_СостоянияПроектов_Согласован.Период, МЕСЯЦ),
+	ГОД(УП_СостоянияПроектов_Согласован.Период),
+	МЕСЯЦ(УП_СостоянияПроектов_Согласован.Период),
+	УП_СостоянияПроектов_Согласован.АналитикаУчетаПоКонтрагентам
+
+ИНДЕКСИРОВАТЬ ПО
+	ДатаСреза,
+	Год,
+	Месяц,
+	АналитикаУчетаПоКонтрагентам
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	МАКСИМУМ(УП_ВремяВыполнениеПроектов_План.Период) КАК Период,
+	ВТ_СогласованныеПроекты.ДатаСреза КАК ДатаСреза,
+	ВТ_СогласованныеПроекты.Год КАК Год,
+	ВТ_СогласованныеПроекты.Месяц КАК Месяц,
+	ВТ_СогласованныеПроекты.АналитикаУчетаПоКонтрагентам КАК АналитикаУчетаПоКонтрагентам
+ПОМЕСТИТЬ ВТ_ВремяВыполнения_План_МаксПериод
+ИЗ
+	ВТ_СогласованныеПроекты КАК ВТ_СогласованныеПроекты
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.УП_ВремяВыполнениеПроектов_План КАК УП_ВремяВыполнениеПроектов_План
+		ПО ВТ_СогласованныеПроекты.АналитикаУчетаПоКонтрагентам = УП_ВремяВыполнениеПроектов_План.АналитикаУчетаПоКонтрагентам
+			И ВТ_СогласованныеПроекты.ДатаСреза &gt;= УП_ВремяВыполнениеПроектов_План.Период
+
+СГРУППИРОВАТЬ ПО
+	ВТ_СогласованныеПроекты.ДатаСреза,
+	ВТ_СогласованныеПроекты.АналитикаУчетаПоКонтрагентам,
+	ВТ_СогласованныеПроекты.Год,
+	ВТ_СогласованныеПроекты.Месяц
+
+ИНДЕКСИРОВАТЬ ПО
+	Период,
+	ДатаСреза,
+	Год,
+	Месяц,
+	АналитикаУчетаПоКонтрагентам
+;
+
+////////////////////////////////////////////////////////////////////////////////
+УНИЧТОЖИТЬ ВТ_СогласованныеПроекты
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_ВремяВыполнения_План_МаксПериод.Год КАК Год,
+	ВТ_ВремяВыполнения_План_МаксПериод.Месяц КАК Месяц,
+	СУММА(УП_ВремяВыполнениеПроектов_План.ВремяВыполнения) КАК ВремяВыполнения_План
+ПОМЕСТИТЬ ВТ_ВремяВыполнения_План
+ИЗ
+	ВТ_ВремяВыполнения_План_МаксПериод КАК ВТ_ВремяВыполнения_План_МаксПериод
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.УП_ВремяВыполнениеПроектов_План КАК УП_ВремяВыполнениеПроектов_План
+		ПО ВТ_ВремяВыполнения_План_МаксПериод.АналитикаУчетаПоКонтрагентам = УП_ВремяВыполнениеПроектов_План.АналитикаУчетаПоКонтрагентам
+			И ВТ_ВремяВыполнения_План_МаксПериод.Период = УП_ВремяВыполнениеПроектов_План.Период
+
+СГРУППИРОВАТЬ ПО
+	ВТ_ВремяВыполнения_План_МаксПериод.Год,
+	ВТ_ВремяВыполнения_План_МаксПериод.Месяц
+;
+
+////////////////////////////////////////////////////////////////////////////////
+УНИЧТОЖИТЬ ВТ_ВремяВыполнения_План_МаксПериод
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ГОД(УП_ВремяВыполнениеПроектов_Факт.Период) КАК Год,
+	МЕСЯЦ(УП_ВремяВыполнениеПроектов_Факт.Период) КАК Месяц,
+	СУММА(УП_ВремяВыполнениеПроектов_Факт.ВремяВыполнения) КАК ВремяВыполнения_Факт
+ПОМЕСТИТЬ ВТ_ВремяВыполнения_Факт
+ИЗ
+	РегистрСведений.УП_ВремяВыполнениеПроектов_Факт КАК УП_ВремяВыполнениеПроектов_Факт
+
+СГРУППИРОВАТЬ ПО
+	ГОД(УП_ВремяВыполнениеПроектов_Факт.Период),
+	МЕСЯЦ(УП_ВремяВыполнениеПроектов_Факт.Период)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_ВремяВыполнения_План.Год,
+	ВТ_ВремяВыполнения_План.Месяц,
+	ВТ_ВремяВыполнения_План.ВремяВыполнения_План,
+	0 КАК ВремяВыполнения_Факт
+ПОМЕСТИТЬ ВТ_ВремяВыполнения_НеСгруппированное
+ИЗ
+	ВТ_ВремяВыполнения_План КАК ВТ_ВремяВыполнения_План
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ВТ_ВремяВыполнения_Факт.Год,
+	ВТ_ВремяВыполнения_Факт.Месяц,
+	0,
+	ВТ_ВремяВыполнения_Факт.ВремяВыполнения_Факт
+ИЗ
+	ВТ_ВремяВыполнения_Факт КАК ВТ_ВремяВыполнения_Факт
+;
+
+////////////////////////////////////////////////////////////////////////////////
+УНИЧТОЖИТЬ ВТ_ВремяВыполнения_План
+;
+
+////////////////////////////////////////////////////////////////////////////////
+УНИЧТОЖИТЬ ВТ_ВремяВыполнения_Факт
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_ВремяВыполнения_НеСгруппированное.Год,
+	ВТ_ВремяВыполнения_НеСгруппированное.Месяц,
+	СУММА(ВТ_ВремяВыполнения_НеСгруппированное.ВремяВыполнения_План) КАК ВремяВыполнения_План,
+	СУММА(ВТ_ВремяВыполнения_НеСгруппированное.ВремяВыполнения_Факт) КАК ВремяВыполнения_Факт
+ИЗ
+	ВТ_ВремяВыполнения_НеСгруппированное КАК ВТ_ВремяВыполнения_НеСгруппированное
+
+СГРУППИРОВАТЬ ПО
+	ВТ_ВремяВыполнения_НеСгруппированное.Год,
+	ВТ_ВремяВыполнения_НеСгруппированное.Месяц
+;
+
+////////////////////////////////////////////////////////////////////////////////
+УНИЧТОЖИТЬ ВТ_ВремяВыполнения_НеСгруппированное</query>
+	</dataSet>
+	<calculatedField>
+		<dataPath>ТекущийГод</dataPath>
+		<expression>ГОД(ТекущаяДата())</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Текущий год</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>ТекущийМесяц</dataPath>
+		<expression>МЕСЯЦ(ТекущаяДата())</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Текущий месяц</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<totalField>
+		<dataPath>ВремяВыполнения_План</dataPath>
+		<expression>УП_ОбщегоНазначения_Сервер.ПреобразоватьЧислоМинутВСтрокуВремени(Сумма(ВремяВыполнения_План))</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ВремяВыполнения_Факт</dataPath>
+		<expression>УП_ОбщегоНазначения_Сервер.ПреобразоватьЧислоМинутВСтрокуВремени(Сумма(ВремяВыполнения_Факт))</expression>
+	</totalField>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВремяВыполнения_План</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВремяВыполнения_Факт</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:left xsi:type="dcscor:Field">Год</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:right xsi:type="dcscor:Field">ТекущийГод</dcsset:right>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:left xsi:type="dcscor:Field">Месяц</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:right xsi:type="dcscor:Field">ТекущийМесяц</dcsset:right>
+				</dcsset:item>
+			</dcsset:filter>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МакетОформления</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">Арктика</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>ТипДиаграммы</dcscor:parameter>
+					<dcscor:value xsi:type="v8ui:ChartType">Column3D</dcscor:value>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>ТипДиаграммы.БазовоеЗначение</dcscor:parameter>
+						<dcscor:value xsi:type="xs:decimal">170</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>ТипДиаграммы.АвтоРаздвижениеСерий</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:AutoSeriesSeparation">All</dcscor:value>
+					</dcscor:item>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьПараметрыДанных</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

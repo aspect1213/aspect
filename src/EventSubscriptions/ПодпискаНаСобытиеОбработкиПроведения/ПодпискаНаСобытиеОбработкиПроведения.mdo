@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6b1fe344-ae14-4ecc-a460-41ec0d6d8603">
+  <name>ПодпискаНаСобытиеОбработкиПроведения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Подписка на событие обработки проведения</value>
+  </synonym>
+  <source>
+    <types>DocumentObject</types>
+  </source>
+  <event>Posting</event>
+  <handler>CommonModule.УП_ОбщегоНазначения_Сервер.ПодпискаНаСобытиеОбработкиПроведенияОбработкаПроведения</handler>
+</mdclass:EventSubscription>

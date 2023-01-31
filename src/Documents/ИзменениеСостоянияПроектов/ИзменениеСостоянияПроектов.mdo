@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cd4adead-77cc-4e43-be10-2bc680180f2e">
+  <producedTypes>
+    <objectType typeId="9a9b3d4c-365c-4545-bdf9-8f7f04dcfcb4" valueTypeId="d9184c4f-73a0-453c-ac95-b1618a09434f"/>
+    <refType typeId="992130f5-1bfa-44e8-baf0-5369106a4839" valueTypeId="a27dd09e-cd2c-445e-a171-395261fb95ea"/>
+    <selectionType typeId="3a1bdcc2-40d3-4fa7-98dc-30a4b1a749ad" valueTypeId="30e759ab-395c-490b-9483-ee7ea08e3c71"/>
+    <listType typeId="041c841d-840f-4b6d-bcd2-407cb207e177" valueTypeId="40b64b72-1df1-4b3c-8dfe-d8d7e2fa7f9c"/>
+    <managerType typeId="3e1836c6-bc54-4292-a6b8-441681953fc4" valueTypeId="499f29ef-a5ba-491c-ad92-0412f3dbeec7"/>
+  </producedTypes>
+  <name>ИзменениеСостоянияПроектов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Изменение состояния проектов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ИзменениеСостоянияПроектов.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ИзменениеСостоянияПроектов.Form.ФормаДокумента</defaultObjectForm>
+  <registerRecords>InformationRegister.УП_ВремяВыполнениеПроектов_План</registerRecords>
+  <registerRecords>InformationRegister.ВремяВыполненияПроектов</registerRecords>
+  <registerRecords>InformationRegister.СостоянияПроектов</registerRecords>
+  <registerRecords>InformationRegister.УП_СостоянияПроектов</registerRecords>
+  <registerRecords>InformationRegister.УП_СтоимостьПроектов</registerRecords>
+  <registerRecords>InformationRegister.СтоимостьПроектов</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="1e44d6c2-d73b-4162-bd0c-08539faff654">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="165b40b9-f28c-4faa-9070-d70d7b92c2bd">
+    <name>ВидИзменения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид изменения</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВидыИзмененийСостоянийПроектов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="bc02d85a-c132-4ac2-b970-1931f864afe9">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="6e824c8d-1bbb-4a34-9abb-836f777f2762">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="22dc7eab-d3d3-40dc-b235-2fbdc26932b7">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="41f5a500-f9ec-484d-a310-47b21aa8e834">
+    <producedTypes>
+      <objectType typeId="7f5c896a-2dc4-497f-ac98-bc8dad4daf87" valueTypeId="a87314c8-139e-44da-a84a-ff238be2668e"/>
+      <rowType typeId="dd11676a-6997-4f72-8025-8bacd4e0a67e" valueTypeId="902c701b-e20d-4839-9ebf-130e8f1359b4"/>
+    </producedTypes>
+    <name>Проекты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проекты</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="a9305c35-12d1-4c65-8490-614dfef0fca6">
+      <name>Клиент</name>
+      <synonym>
+        <key>ru</key>
+        <value>Клиент</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Клиенты</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <choiceParameterLinks>
+        <name>Отбор.Контрагент</name>
+        <field>Document.ИзменениеСостоянияПроектов.Attribute.Контрагент</field>
+      </choiceParameterLinks>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="c3a1634a-8e03-47d4-912b-eaff21f4c5f6">
+      <name>Проект</name>
+      <synonym>
+        <key>ru</key>
+        <value>Проект</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Проекты</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <choiceParameterLinks>
+        <name>Отбор.Контрагент</name>
+        <field>Document.ИзменениеСостоянияПроектов.Attribute.Контрагент</field>
+      </choiceParameterLinks>
+      <choiceParameterLinks>
+        <name>Отбор.Клиент</name>
+        <field>Document.ИзменениеСостоянияПроектов.TabularSection.Проекты.Attribute.Клиент</field>
+      </choiceParameterLinks>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="b4f8dfa6-aa40-42e5-84e2-9e44ee5b1c52">
+      <name>Валюта</name>
+      <synonym>
+        <key>ru</key>
+        <value>Валюта</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Валюты</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="248d8f0f-4db2-4099-8f6a-79de3e6e2060">
+      <name>ВремяВыполненияТекущее</name>
+      <synonym>
+        <key>ru</key>
+        <value>Время выполнения текущее</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>5</length>
+        </stringQualifiers>
+      </type>
+      <mask>99:99</mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="c29db01c-3fa6-4a6e-b444-0f397254a10a">
+      <name>ВремяВыполнения</name>
+      <synonym>
+        <key>ru</key>
+        <value>Время выполнения</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>5</length>
+        </stringQualifiers>
+      </type>
+      <mask>99:99</mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="e07b3c0b-a0da-4b0a-afbd-44592303ec60">
+      <name>Сумма</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сумма</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="06513e7c-ea69-4388-a17b-5538b0c100af">
+      <name>СостояниеПроекта</name>
+      <synonym>
+        <key>ru</key>
+        <value>Состояние проекта</value>
+      </synonym>
+      <type>
+        <types>EnumRef.СостоянияПроектов</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

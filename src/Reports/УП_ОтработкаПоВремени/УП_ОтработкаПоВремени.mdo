@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2f18005c-51fb-415a-b338-abf93d7f70fc">
+  <producedTypes>
+    <objectType typeId="e0e23449-0912-4ea4-9c5c-dc1190134fb1" valueTypeId="20cc3b70-5753-403f-82ab-f03d862be56b"/>
+    <managerType typeId="7b1080f3-9fea-4d15-8be0-e70aa7f2ad27" valueTypeId="83079610-4be7-4fd6-a970-abe4ba4542e4"/>
+  </producedTypes>
+  <name>УП_ОтработкаПоВремени</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отработка по времени (отчет для клиента)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.УП_ОтработкаПоВремени.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="ad77460c-84db-4a93-ab0c-c5550576da26">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

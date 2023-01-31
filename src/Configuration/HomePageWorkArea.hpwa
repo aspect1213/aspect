@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hpwa:HomePageWorkArea xmlns:hpwa="http://g5.1c.ru/v8/dt/hpwa">
+  <workingAreaTemplate>TwoColumnsVariableWidth</workingAreaTemplate>
+  <columns/>
+  <columns>
+    <items>
+      <form>Catalog.Заметки.Form.МоиЗаметки</form>
+      <height>5</height>
+      <visibility>
+        <common>true</common>
+      </visibility>
+    </items>
+  </columns>
+</hpwa:HomePageWorkArea>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="768b6364-7ad9-4806-8b99-bd2713c83519">
+  <producedTypes>
+    <selectionType typeId="2e0490a4-15fc-4417-a286-be4939b9a574" valueTypeId="c8b87ae4-264e-46d5-8048-95a920729886"/>
+    <listType typeId="5b4ece34-b03c-40dc-ae01-b2b7d710485a" valueTypeId="8cae705a-4f93-4d92-b39d-e9c0d7068f96"/>
+    <managerType typeId="de7fdba4-bcdd-480c-878e-b38c968ebe68" valueTypeId="c371f590-82a0-4205-9384-304bc077c9bc"/>
+    <recordSetType typeId="17f9f02f-c1d2-473b-8405-cb0c7714d39f" valueTypeId="03b15419-552c-4605-a45a-ef659036e154"/>
+    <recordKeyType typeId="ce953fb5-2fb4-4c73-a4cb-595d136484f6" valueTypeId="d755f939-957c-4e2a-8dc3-6503522ee0e1"/>
+    <recordType typeId="4911c5aa-c75c-4cfb-8a8e-dd3ce80be59f" valueTypeId="4520a5b8-f463-452c-ae54-74a525becc47"/>
+    <recordManagerType typeId="d0a2a0d3-cd53-4aed-8577-de2cb8b94b16" valueTypeId="621bae18-8115-4e5a-b735-bd969c630843"/>
+  </producedTypes>
+  <name>УП_СостоянияПроектов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Состояния проектов (не используется)</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="1b438b2f-76e0-4950-8989-d505f5a68fb1">
+    <name>Состояние</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состояние</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СостоянияПроектов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="697cd508-5d4e-44d5-a270-3d1b4fd960c7">
+    <name>АналитикаУчетаПоКонтрагентам</name>
+    <synonym>
+      <key>ru</key>
+      <value>Аналитика учета по контрагентам</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КлючиАналитикиУчетаПоКонтрагентам</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Определяет аналитику расчетов с клиентами.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

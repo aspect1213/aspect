@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="502cd0f2-e115-4e7b-89e1-7fc84dbc2bfa">
+  <producedTypes>
+    <selectionType typeId="ffde34eb-95f1-4463-a6d5-89f1ef441bb9" valueTypeId="108d4bbd-7444-4bca-90d9-6bcddbc5928c"/>
+    <listType typeId="19629c2b-f101-4af5-9c36-88c1f58f5aec" valueTypeId="43990423-e7ff-4155-b635-53cf00fdb25c"/>
+    <managerType typeId="d1f61a31-7955-4ad0-bf9f-051316813e24" valueTypeId="8f3cf8bc-28d7-4eed-99f8-9ac3d51467b1"/>
+    <recordSetType typeId="aecacca5-ac6c-4646-af4a-d1478866fe36" valueTypeId="3d74952c-dcdc-435d-8d6f-4ced47ccd0f8"/>
+    <recordKeyType typeId="68f970c5-b732-4c3a-8f99-8eb30f600304" valueTypeId="d51bcd39-dfc4-419f-9a2a-cd6980d88e53"/>
+    <recordType typeId="0cae2363-c204-4ff1-a6a6-e8dd34b4076c" valueTypeId="ff0ab9ed-bf89-4bd7-8884-fcb1d536b0bd"/>
+    <recordManagerType typeId="a512ad98-5f2d-4198-9f38-658391375179" valueTypeId="59301223-e726-45e7-ab53-8980fbfdd54f"/>
+  </producedTypes>
+  <name>НастройкиСозданияСопровождения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройки создания сопровождения</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="ac9f1b67-6bb4-4d8f-9fc1-e1dc98246508">
+    <name>Исполнитель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Исполнитель</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Исполнители</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="8ac0be68-f571-43f6-86e2-8a9588466ccd">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="27c4785a-ba84-454f-bf6d-614ed4359eec">
+    <name>Клиент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Клиент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Клиенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.Контрагент</name>
+      <field>InformationRegister.НастройкиСозданияСопровождения.Dimension.Контрагент</field>
+    </choiceParameterLinks>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

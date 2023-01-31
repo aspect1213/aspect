@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cec380b6-eecd-4a42-b099-a7317114c213">
+  <name>Администрирование</name>
+  <synonym>
+    <key>ru</key>
+    <value>Администрирование</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.РазделАдминистрирование</picture>
+  </picture>
+  <content>DataProcessor.ПанельАдминистрирования</content>
+  <content>aed2ceeb-cc0f-4bdc-bb94-2e15cd68aa96</content>
+  <content>DataProcessor.ПолнотекстовыйПоискВДанных</content>
+  <content>InformationRegister.НастройкаДоступаУдаленныхИсполнителей</content>
+  <content>DataProcessor.ПоискИЗаменаЗначений</content>
+  <content>DataProcessor.ПоискИУдалениеДублей</content>
+  <content>DataProcessor.РегламентныеИФоновыеЗадания</content>
+  <content>DataProcessor.УдалениеПомеченныхОбъектов</content>
+</mdclass:Subsystem>

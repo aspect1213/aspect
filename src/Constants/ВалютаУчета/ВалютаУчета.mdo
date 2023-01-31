@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0297c609-54e4-49f9-a187-b366e421bd79">
+  <producedTypes>
+    <managerType typeId="ca3e83f5-8e98-476e-ac4d-196a977a4fd9" valueTypeId="885a1ef5-92a5-4900-b567-53f2cb068bdf"/>
+    <valueManagerType typeId="cada359d-aece-4d22-bdc3-133875dfa759" valueTypeId="cf67ba12-ea5c-46d1-a056-a0bcf85c4bd6"/>
+    <valueKeyType typeId="71ba5712-b7d2-5636-9614-d0510474ca7c" valueTypeId="ec18ea39-6064-57a4-9eb6-1babf0ab9782"/>
+  </producedTypes>
+  <name>ВалютаУчета</name>
+  <synonym>
+    <key>ru</key>
+    <value>Валюта учета</value>
+  </synonym>
+  <type>
+    <types>CatalogRef.Валюты</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

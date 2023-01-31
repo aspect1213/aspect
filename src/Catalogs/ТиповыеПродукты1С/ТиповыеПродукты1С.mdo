@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="acd46bf2-06ea-41a2-849b-00b86c7e404d">
+  <producedTypes>
+    <objectType typeId="074020c0-c196-47da-adfe-49b05e4d079b" valueTypeId="304e54e0-c6d8-4105-99e6-44c01ef1af83"/>
+    <refType typeId="1c11198b-a8bf-4abd-b6b0-14e70eaab2c6" valueTypeId="47c15944-b78b-44ca-8f4e-bc60d62704f2"/>
+    <selectionType typeId="203e033a-56b2-4d6a-a76d-fb5d0395947d" valueTypeId="ff424b5d-f5da-4611-bf01-7dd2c546f8dc"/>
+    <listType typeId="92cf5fd8-1c6f-4f22-aeba-219c0b3c2c97" valueTypeId="8d588f24-f08b-4694-9b1b-7d1a97581932"/>
+    <managerType typeId="70476bea-6e77-4c09-a5d2-0f446b7a2e21" valueTypeId="0a342032-7f96-4e90-b47d-c312b5a368b1"/>
+  </producedTypes>
+  <name>ТиповыеПродукты1С</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типовые продукты 1С</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ТиповыеПродукты1С.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ТиповыеПродукты1С.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>PredefinedDataName</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Predefined</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>IsFolder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Owner</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Parent</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Description</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Code</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <hierarchical>true</hierarchical>
+  <limitLevelCount>true</limitLevelCount>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ТиповыеПродукты1С.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultFolderForm>Catalog.ТиповыеПродукты1С.Form.ФормаГруппы</defaultFolderForm>
+  <defaultListForm>Catalog.ТиповыеПродукты1С.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.ТиповыеПродукты1С.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="013efd0e-7055-4ce2-b1b8-62c349d3be26">
+    <name>ОповещатьОВыходеНовойВерсии</name>
+    <synonym>
+      <key>ru</key>
+      <value>Оповещать о выходе новой версии</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:BooleanValue">
+      <value>true</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a2e09143-927c-48e5-a768-0d86856d8791">
+    <name>ТипПродукта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип продукта</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ТипыПродуктов1С</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="b72be7e8-ecba-409c-b62c-51e6c0d3694c">
+    <producedTypes>
+      <objectType typeId="b0e25643-0f3e-4e52-8a58-531e9deb751d" valueTypeId="88b14ade-70a9-42f9-9bdb-18c65d1b31be"/>
+      <rowType typeId="26060619-3676-40e9-8418-db8e939fa68a" valueTypeId="b5973c1e-739b-43a3-8091-1aa6dfa67e17"/>
+    </producedTypes>
+    <name>ПолучателиОповещений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получатели оповещений</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="111389c8-40ab-4ed3-9623-944099c7f630">
+      <name>Получатель</name>
+      <synonym>
+        <key>ru</key>
+        <value>Получатель</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ФизическиеЛица</types>
+        <types>String</types>
+        <types>CatalogRef.КонтактныеЛица</types>
+        <types>CatalogRef.Контрагенты</types>
+        <types>CatalogRef.Клиенты</types>
+        <types>CatalogRef.Исполнители</types>
+        <stringQualifiers>
+          <length>100</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <forms uuid="03d88b0c-de99-436b-abe8-530228672bb1">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="e643e9d6-4e76-4288-921a-5ffdd7716a56">
+    <name>ФормаГруппы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма группы</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="8ae770d4-0409-4c12-ab7c-e4c16c5a6a3d">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="1f3c0aa9-4f2c-4db2-bc5b-562fccd88d3a">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

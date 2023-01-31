@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="75c845e5-564a-48ad-b3a1-add8e12c03de">
+  <name>Справочники</name>
+  <synonym>
+    <key>ru</key>
+    <value>Справочники</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.Справочники</picture>
+  </picture>
+  <content>Catalog.Валюты</content>
+  <content>Catalog.ВерсииРасширений</content>
+  <content>Catalog.ВерсииФайлов</content>
+  <content>Catalog.ВидыКонтактнойИнформации</content>
+  <content>Catalog.ВнешниеПользователи</content>
+  <content>Catalog.ГруппыПользователей</content>
+  <content>Catalog.Заметки</content>
+  <content>Catalog.ГруппыВнешнихПользователей</content>
+  <content>Catalog.ИдентификаторыОбъектовМетаданных</content>
+  <content>Catalog.ИдентификаторыОбъектовРасширений</content>
+  <content>Catalog.КонтактныеЛица</content>
+  <content>Catalog.Контрагенты</content>
+  <content>Catalog.Исполнители</content>
+  <content>Catalog.Номенклатура</content>
+  <content>Catalog.НоменклатураПрисоединенныеФайлы</content>
+  <content>Catalog.ПапкиФайлов</content>
+  <content>Catalog.Пользователи</content>
+  <content>Catalog.Проекты</content>
+  <content>Catalog.СтраныМира</content>
+  <content>Catalog.СпособыОплат</content>
+  <content>Catalog.ТомаХраненияФайлов</content>
+  <content>Catalog.УчетныеЗаписиСинхронизацииФайлов</content>
+  <content>Catalog.УчетныеЗаписиЭлектроннойПочты</content>
+  <content>Catalog.Файлы</content>
+  <content>Catalog.ФизическиеЛица</content>
+  <content>Catalog.ФизическиеЛицаПрисоединенныеФайлы</content>
+  <content>DataProcessor.ПанельАдминистрирования</content>
+  <content>Catalog.ТиповыеПродукты1С</content>
+  <content>Catalog.Клиенты</content>
+  <content>Catalog.КонфигурацииКлиентов</content>
+  <content>Catalog.КлючиАналитикиУчетаПоКонтрагентам</content>
+  <content>Catalog.ДоговорыКонтрагентов</content>
+  <subsystems>ЗаметкиИФайлы</subsystems>
+  <subsystems>КонтрагентыИКлиенты</subsystems>
+  <subsystems>Номенклатура</subsystems>
+  <subsystems>УправлениеПроектами</subsystems>
+  <subsystems>Прочее</subsystems>
+</mdclass:Subsystem>

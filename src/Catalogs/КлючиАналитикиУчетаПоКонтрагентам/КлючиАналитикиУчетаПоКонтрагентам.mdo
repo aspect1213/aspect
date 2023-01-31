@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f632a6be-59af-4136-b050-374dd5ec1ed8">
+  <producedTypes>
+    <objectType typeId="04705d82-8bed-4bf2-8461-b9b1bbb4ca23" valueTypeId="d465e0cb-242d-4507-83d5-e6a8b0cadca3"/>
+    <refType typeId="e5ef53e6-1ea8-4231-9c58-493e9142907a" valueTypeId="1a5b3e28-7d20-4f17-8fe1-a4886e751214"/>
+    <selectionType typeId="52178910-3a61-4f26-bff8-f1ce129e9ba3" valueTypeId="c556cb91-d3bc-4331-9b3f-051f370b5aec"/>
+    <listType typeId="79b4c2c4-e8c0-4000-b4b5-82a66b0373c2" valueTypeId="6bb07b67-cf75-40e0-a121-504e6d3a722e"/>
+    <managerType typeId="65665dfc-479a-4823-b9ad-c0b222ebbd69" valueTypeId="641146f7-cd94-4fa5-b3e7-d5284b5d5665"/>
+  </producedTypes>
+  <name>КлючиАналитикиУчетаПоКонтрагентам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ключи аналитики учета по контрагентам</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.КлючиАналитикиУчетаПоКонтрагентам.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Ключ аналитики учета по контрагентам</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Ключи аналитики учета по контрагентам</value>
+  </listPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="33b09730-21d2-4b30-b271-fc38466dc2e9">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a90fce9a-d83e-4bb3-beba-fc0e13f388cb">
+    <name>Клиент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Клиент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Клиенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="678447e3-e753-4f48-bf8c-075bce0ac8b1">
+    <name>Проект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проект</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Проекты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

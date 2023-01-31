@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c815e5f7-7115-4f25-8e7f-906b52642d9d">
+  <name>ЗаметкиИФайлы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Заметки и файлы</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Catalog.Заметки</content>
+  <content>Catalog.Файлы</content>
+  <parentSubsystem>Subsystem.Справочники</parentSubsystem>
+</mdclass:Subsystem>

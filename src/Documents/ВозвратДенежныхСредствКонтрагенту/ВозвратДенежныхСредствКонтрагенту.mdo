@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0a737778-f3df-4144-9ae0-fa1123cdaa52">
+  <producedTypes>
+    <objectType typeId="e4fc7a2d-1702-406a-ab61-fb5530c82b5c" valueTypeId="74f32343-4cf7-4393-bb81-bcac49554419"/>
+    <refType typeId="e1d1ae83-57c0-43ce-bc9a-cea458da8876" valueTypeId="36bf3c05-01fb-40b0-a9a8-785e9163adc8"/>
+    <selectionType typeId="be17a1f7-2201-490c-ae3f-7c0483e9fa99" valueTypeId="d46ed942-9f04-42b5-8dbd-9746f0507308"/>
+    <listType typeId="653c7927-fa86-4c48-afb3-e2db5f4127d0" valueTypeId="82ed86ba-3b29-4754-9ec1-6d5d0d8a20e0"/>
+    <managerType typeId="d996a6f6-cc83-4619-91cf-b5ec5895063d" valueTypeId="225ee6c1-f631-442f-bb20-3b2ec17f048e"/>
+  </producedTypes>
+  <name>ВозвратДенежныхСредствКонтрагенту</name>
+  <synonym>
+    <key>ru</key>
+    <value>Возврат денежных средств контрагенту</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ВозвратДенежныхСредствКонтрагенту.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ВозвратДенежныхСредствКонтрагенту.Form.ФормаДокумента</defaultObjectForm>
+  <registerRecords>AccumulationRegister.ВозвращенныеДенежныеСредства</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="55bf24f0-691f-4989-9dfb-140460f95170">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="56fad013-96ed-45c1-a98d-fc177f58de42">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f1b6f452-94a0-4478-b172-e734bdba89da">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="80ad40fd-fa47-4686-a6d6-f2d2ed9f4bec">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="bf9a7a32-e1a6-4ea5-b6db-98abd8a600ee">
+    <producedTypes>
+      <objectType typeId="960f540e-27df-409f-ac12-25eda2808455" valueTypeId="5deb669c-54b2-4719-8bf3-a369206dbb1f"/>
+      <rowType typeId="3794f2d4-a6e2-4bba-9728-9dba6dd24cff" valueTypeId="583f1a9a-7e57-4453-b910-fdbc8b0aa037"/>
+    </producedTypes>
+    <name>Проекты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проекты</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="236016c6-8ce2-4079-a52d-113c605e33bb">
+      <name>Клиент</name>
+      <synonym>
+        <key>ru</key>
+        <value>Клиент</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Клиенты</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <choiceParameterLinks>
+        <name>Отбор.Контрагент</name>
+        <field>Document.ВозвратДенежныхСредствКонтрагенту.Attribute.Контрагент</field>
+      </choiceParameterLinks>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="2c2d268b-de6c-41a9-84bb-41a2a4b3eec0">
+      <name>Проект</name>
+      <synonym>
+        <key>ru</key>
+        <value>Проект</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Проекты</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <choiceParameterLinks>
+        <name>Отбор.Контрагент</name>
+        <field>Document.ВозвратДенежныхСредствКонтрагенту.Attribute.Контрагент</field>
+      </choiceParameterLinks>
+      <choiceParameterLinks>
+        <name>Отбор.Клиент</name>
+        <field>Document.ВозвратДенежныхСредствКонтрагенту.TabularSection.Проекты.Attribute.Клиент</field>
+      </choiceParameterLinks>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="3fa83ef1-1b43-4d62-9a71-d4d7c624feb1">
+      <name>ВалютаВзаиморасчетов</name>
+      <synonym>
+        <key>ru</key>
+        <value>Валюта взаиморасчетов</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Валюты</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="cbee193f-e65f-429e-aab8-4b98f3109a99">
+      <name>СуммаВзаиморасчетов</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сумма взаиморасчетов</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="d204d1e2-1946-4591-a185-4ab402ea3977">
+      <name>ПричинаВозврата</name>
+      <synonym>
+        <key>ru</key>
+        <value>Причина возврата</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>100</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

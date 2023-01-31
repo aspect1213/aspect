@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonCommand xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0ab5ef1f-abfd-4b53-ac04-8b3741b91665">
+  <name>ПоказатьДвиженияДокумента</name>
+  <synonym>
+    <key>ru</key>
+    <value>Движения документа</value>
+  </synonym>
+  <group>FormCommandBarImportant</group>
+  <commandParameterType>
+    <types>DocumentRef.УтверждениеОплатыИсполнителей</types>
+    <types>DocumentRef.ВыполнениеПроектов</types>
+    <types>DocumentRef.СогласованиеПроектов</types>
+    <types>DocumentRef.ПоступлениеОплатыОтКонтрагента</types>
+    <types>DocumentRef.ИзменениеСостоянияПроектов</types>
+    <types>DocumentRef.РасходыНаПроекты</types>
+    <types>DocumentRef.ОплатаРаботыИсполнителей</types>
+    <types>DocumentRef.ВыполнениеРаботНадПроектом</types>
+    <types>DocumentRef.ВозвратДенежныхСредствКонтрагенту</types>
+  </commandParameterType>
+  <representation>Auto</representation>
+  <toolTip>
+    <key>ru</key>
+    <value>Показать проводки
+и другие движения документа</value>
+  </toolTip>
+</mdclass:CommonCommand>

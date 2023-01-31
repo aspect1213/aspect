@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="911c87c4-9622-459e-a0de-4d4c974421a6">
+  <producedTypes>
+    <objectType typeId="eb0510d2-31ee-4d78-8b63-90ff8fa2f31c" valueTypeId="49c4aece-3f71-4f37-b76f-359148c34622"/>
+    <managerType typeId="bd44ebe4-ec20-4241-96e6-70617b8d3127" valueTypeId="6fe62d6e-6857-489c-b64f-5f223c55beb4"/>
+  </producedTypes>
+  <name>РасчетыСКлиентамиПоИсполнителям</name>
+  <synonym>
+    <key>ru</key>
+    <value>Расчеты с клиентами по исполнителям</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.РасчетыСКлиентамиПоИсполнителям.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.РасчетыСКлиентамиПоИсполнителям.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <attributes uuid="a70970dd-4197-4c59-a9e1-bdcfdd2412eb">
+    <name>Исполнитель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Исполнитель</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Исполнители</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="318976d1-6ae4-4e54-8859-349e1c5d4284">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="8da559aa-dbdb-4fa6-b94c-38f09c684126">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

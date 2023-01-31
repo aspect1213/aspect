@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5d192599-1fcd-40de-a3d2-0ae40dbe1bb6">
+  <producedTypes>
+    <objectType typeId="ca16aad9-e6f9-46cf-b2a4-56563997fb78" valueTypeId="1ac0bc4c-320d-4a81-8cc0-f0babfacf08f"/>
+    <managerType typeId="8237b2af-3935-4571-8a4d-d932ed2bf13c" valueTypeId="78a690fb-dcb0-45c2-85f3-bff0420505c1"/>
+  </producedTypes>
+  <name>РасчетыСКлиентами</name>
+  <synonym>
+    <key>ru</key>
+    <value>Расчеты с клиентами по проектам</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.РасчетыСКлиентами.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <attributes uuid="77533536-9d39-4293-ba46-1c73434221eb">
+    <name>Исполнитель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Исполнитель</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Исполнители</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="faa7f142-4ee0-47df-86e4-6dd7a8207d0c">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="86d74aed-d0b5-40c3-aefc-9c326a6efc21">
+    <name>ОсновнаяСхемаКомпоновкиДанных_РС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных РС</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="afdfe90c-8972-4468-b39e-867284195919">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

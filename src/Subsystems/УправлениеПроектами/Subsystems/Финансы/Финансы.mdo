@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2e55d3a9-ca66-4673-88b9-3a83b2b28f23">
+  <name>Финансы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Финансы</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Document.ПоступлениеОплатыОтКонтрагента</content>
+  <content>Document.РасходыНаПроекты</content>
+  <content>Document.ВозвратДенежныхСредствКонтрагенту</content>
+  <content>AccumulationRegister.ВзаиморасчетыСКонтрагентами</content>
+  <content>InformationRegister.СтоимостьПроектов</content>
+  <content>AccumulationRegister.УП_РасчетыСКонтрагентами</content>
+  <subsystems>Доходы</subsystems>
+  <subsystems>Расходы</subsystems>
+  <parentSubsystem>Subsystem.УправлениеПроектами</parentSubsystem>
+</mdclass:Subsystem>

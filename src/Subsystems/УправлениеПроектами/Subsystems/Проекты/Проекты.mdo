@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7c441e30-9f2c-4671-bad7-d43c1436727b">
+  <name>Проекты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Проекты</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Document.СогласованиеПроектов</content>
+  <content>Document.ВыполнениеПроектов</content>
+  <content>Document.ВыполнениеРаботНадПроектом</content>
+  <content>Document.ИзменениеСостоянияПроектов</content>
+  <content>Enum.ВидыИзмененийСостоянийПроектов</content>
+  <content>Role.УП_УдаленныйИсполнитель</content>
+  <content>InformationRegister.ВремяВыполненияПроектов</content>
+  <content>InformationRegister.ОбщиеДанныеПоПроектам</content>
+  <content>InformationRegister.РасходыНаПроекты</content>
+  <content>InformationRegister.СостоянияПроектов</content>
+  <content>DataProcessor.ПомощникВводаПервичныхДанныхПроекта</content>
+  <content>Document.СчетНаОплату</content>
+  <content>InformationRegister.НастройкиСозданияСопровождения</content>
+  <content>DataProcessor.ПомощникСозданияПроектовСопровождения</content>
+  <parentSubsystem>Subsystem.УправлениеПроектами</parentSubsystem>
+</mdclass:Subsystem>

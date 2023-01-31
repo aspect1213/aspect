@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ef8a82f2-d3e5-4f0d-8a16-024d9cdacce2">
+  <name>УстановитьПометкуУдаленияФайлов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Установить пометку удаления файлов</value>
+  </synonym>
+  <source>
+    <types>DefinedType.ВладелецФайловОбъект</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.РаботаСФайлами.УстановитьПометкуУдаленияФайловПередЗаписью</handler>
+</mdclass:EventSubscription>

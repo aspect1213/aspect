@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="39883afb-b619-432b-9118-a0b572176293">
+  <name>КонтрагентыИКлиенты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Контрагенты и клиенты</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Catalog.Контрагенты</content>
+  <content>Catalog.КонтактныеЛица</content>
+  <content>Catalog.Клиенты</content>
+  <content>Catalog.ДоговорыКонтрагентов</content>
+  <parentSubsystem>Subsystem.Справочники</parentSubsystem>
+</mdclass:Subsystem>

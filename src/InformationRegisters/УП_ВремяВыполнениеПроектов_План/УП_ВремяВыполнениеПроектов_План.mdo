@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0f8d6531-c057-446d-915a-2813a09257a5">
+  <producedTypes>
+    <selectionType typeId="81a31a28-2931-4dab-b832-50500f995d9d" valueTypeId="eb955167-9d96-45b2-ac59-76f0de11c595"/>
+    <listType typeId="0997ae77-7c70-448f-9c4f-e05e2d0e1aa3" valueTypeId="dc2c441e-33fb-4b3e-b93d-db1332a04002"/>
+    <managerType typeId="8960aa7b-2e5c-4d24-a4cf-e3eb8927a265" valueTypeId="93ccd554-cb46-4633-b0d9-8a8e4a36b6b5"/>
+    <recordSetType typeId="9b69ee7f-7f7b-4fd7-87e2-ebc49dfdcf23" valueTypeId="2fb7f227-499f-4ed7-9693-2d27d26c3178"/>
+    <recordKeyType typeId="5f195244-ae92-49e1-b411-f4c07b66889f" valueTypeId="eac72d52-0fc0-49a1-a534-e35d8fb0db34"/>
+    <recordType typeId="03aa1779-c3f4-4b47-9686-a25cf5a83aa1" valueTypeId="a82b0a02-4f3f-4189-a8e1-2a008ebafd93"/>
+    <recordManagerType typeId="010acf0b-591b-4174-ad7d-0619cc6a2a6b" valueTypeId="65fd2cd6-9ad5-47b5-9b9a-0eff45121af8"/>
+  </producedTypes>
+  <name>УП_ВремяВыполнениеПроектов_План</name>
+  <synonym>
+    <key>ru</key>
+    <value>Время выполнение проектов (план)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="eda717f2-c296-480e-ab65-6fad091706bd">
+    <name>ВремяВыполнения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Время выполнения</value>
+    </synonym>
+    <comment>(в минутах)</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="b1f28488-b4f4-4bfb-9ce9-66eef968c9f5">
+    <name>АналитикаУчетаПоКонтрагентам</name>
+    <synonym>
+      <key>ru</key>
+      <value>Аналитика учета по контрагентам</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КлючиАналитикиУчетаПоКонтрагентам</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Определяет аналитику расчетов с клиентами.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

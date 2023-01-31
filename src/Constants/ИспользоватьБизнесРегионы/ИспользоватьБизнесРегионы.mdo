@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bf6e5728-2c40-4f05-a7a3-245aa23c8971">
+  <producedTypes>
+    <managerType typeId="bb84bbba-b60b-495e-9c0b-10ea189964e9" valueTypeId="a436f2d5-7806-4ebf-9b47-98fd1b7aa12b"/>
+    <valueManagerType typeId="95e7c4ce-c024-464f-8640-087fda0983b1" valueTypeId="ed0ab554-7555-476a-bbcb-25f94931ef68"/>
+    <valueKeyType typeId="cfd102ab-f6f8-5943-837a-86927a39e37a" valueTypeId="8a588cd9-61b7-55bd-8d93-ae628828cc18"/>
+  </producedTypes>
+  <name>ИспользоватьБизнесРегионы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать бизнес-регионы</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c62d3d6c-0535-4b7c-b409-6a0621993da9">
+  <name>Расходы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Расходы</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Document.РасходыНаПроекты</content>
+  <content>Document.ВозвратДенежныхСредствКонтрагенту</content>
+  <parentSubsystem>Subsystem.УправлениеПроектами.Subsystem.Финансы</parentSubsystem>
+</mdclass:Subsystem>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6ede4c12-38d3-4693-ad9e-fc40de2c9ed0">
+  <producedTypes>
+    <selectionType typeId="66846599-d48a-4763-aee7-6a070927b539" valueTypeId="468affde-6f8c-4cea-a829-040b924d145e"/>
+    <listType typeId="6ad95527-7142-4afa-9f43-ba956df48c26" valueTypeId="c4e8e550-58ce-4426-9a8b-ea54fd3f55ea"/>
+    <managerType typeId="68a3334e-2b23-4196-b057-119c70109781" valueTypeId="3886ac68-c253-4b62-a7cc-f7ee826f1929"/>
+    <recordSetType typeId="bf04d851-cdfd-4f45-80e9-83d63c62c068" valueTypeId="ee71df48-ca47-492e-85fa-de7b50655a23"/>
+    <recordKeyType typeId="11b027d7-237f-4ae9-8966-76a85d237b74" valueTypeId="9ac165fc-46b4-4b4e-996e-269f602963d9"/>
+    <recordType typeId="2f4dbe5f-f48b-4d96-ac01-c11228d7343f" valueTypeId="f4f248e0-f929-4238-8bc0-659f324b1aee"/>
+    <recordManagerType typeId="5c828c10-fd72-4b72-9c11-8399f9d4eece" valueTypeId="a1e06817-0c1f-4d84-a519-9445254a5ddc"/>
+  </producedTypes>
+  <name>СтоимостьЗаЧасРаботы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Стоимость за час работы</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="3ef3d24d-8a2c-43f0-9f8d-08314a296e0a">
+    <name>ЦенаЗаЧасРаботы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цена за час работы</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="1f5cce70-cc2a-4937-9ce8-cdced072fa39">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+      <types>CatalogRef.Исполнители</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b00623ff-a994-4cbc-b01e-e37c46bb833e">
+  <producedTypes>
+    <refType typeId="d32e2bab-2da7-4da3-8ffa-2e0b0b0ff8da" valueTypeId="3fbf28a1-132b-4ab1-8198-934816c4c811"/>
+    <listType typeId="0a77efe6-ca77-40b0-9728-c83a6a0708f2" valueTypeId="f130e282-2b78-4603-9569-a07504e70405"/>
+    <managerType typeId="cd51b8ae-3af3-46b3-b7d8-47fed519abdb" valueTypeId="35d4fef3-5a5d-48d7-b0ea-f23bb1022f96"/>
+  </producedTypes>
+  <name>ВидыИзмененийСостоянийПроектов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды изменений состояний проектов</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="abfe955a-9b32-4582-ab9a-011f3f214ec1">
+    <name>ЭтапВыполнения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Этап выполнения</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="0fad2994-8e8f-4275-8888-b183938c0eec">
+    <name>ВремяВыполнения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Время выполнения</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

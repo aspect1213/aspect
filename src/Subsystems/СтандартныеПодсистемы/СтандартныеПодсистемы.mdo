@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0421b67e-ed26-491d-ab98-ec59002ed4ce">
+  <name>СтандартныеПодсистемы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Стандартные подсистемы</value>
+  </synonym>
+  <content>Enum.ПолФизическогоЛица</content>
+  <content>Enum.ЮридическоеФизическоеЛицо</content>
+  <content>InformationRegister.СклоненияПредставленийОбъектов</content>
+  <content>InformationRegister.НаличиеЗаметокПоПредмету</content>
+  <content>CommonTemplate.ОписаниеИзмененийСистемы</content>
+  <subsystems>АдресныйКлассификатор</subsystems>
+  <subsystems>ЗавершениеРаботыПользователей</subsystems>
+  <subsystems>КонтактнаяИнформация</subsystems>
+  <subsystems>БазоваяФункциональность</subsystems>
+  <subsystems>Валюты</subsystems>
+  <subsystems>НапоминанияПользователя</subsystems>
+  <subsystems>НастройкаПорядкаЭлементов</subsystems>
+  <subsystems>НастройкиПрограммы</subsystems>
+  <subsystems>ОбновлениеВерсииИБ</subsystems>
+  <subsystems>Организации</subsystems>
+  <subsystems>ПолучениеФайловИзИнтернета</subsystems>
+  <subsystems>Пользователи</subsystems>
+  <subsystems>ПрисоединенныеФайлы</subsystems>
+  <subsystems>РаботаСПочтовымиСообщениями</subsystems>
+  <subsystems>РезервноеКопированиеИБ</subsystems>
+  <subsystems>ФайловыеФункции</subsystems>
+  <subsystems>РаботаСФайлами</subsystems>
+  <subsystems>ЗаметкиПользователя</subsystems>
+  <subsystems>ПолнотекстовыйПоиск</subsystems>
+  <subsystems>Печать</subsystems>
+</mdclass:Subsystem>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="742635a6-477d-49fd-b11f-68180031c40d">
+  <producedTypes>
+    <objectType typeId="47687348-2eaf-4cf2-8985-d08944a2850e" valueTypeId="1bd7a573-8d31-490f-9bb1-3fe56b95fa18"/>
+    <refType typeId="4d17b47a-36dc-4b80-b0ab-0b80694c3db8" valueTypeId="f8384392-c24f-4744-a585-e9a0877fc060"/>
+    <selectionType typeId="0ac4c07b-b7aa-4fdd-a0b7-daedcd6dc237" valueTypeId="c1337dec-d21a-4366-b8f6-548200ea8f5e"/>
+    <listType typeId="9ee60f98-447a-48f0-9f80-2dc4d22bae35" valueTypeId="a6dc3164-bce4-41f9-939c-31f211b69d81"/>
+    <managerType typeId="744a5de3-30ed-4b08-83fc-494111d75bb6" valueTypeId="502f8571-3e5e-4e88-81be-20015a1f73fc"/>
+  </producedTypes>
+  <name>КорректировкаРегистров</name>
+  <synonym>
+    <key>ru</key>
+    <value>Корректировка регистров</value>
+  </synonym>
+  <inputByString>Document.КорректировкаРегистров.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Posted</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <characteristics>
+    <keyField>0:00949768-5833-4fe2-8752-b009d1bceef8</keyField>
+    <typesFilterField>-8</typesFilterField>
+    <typesFilterValue xsi:type="core:ReferenceValue">
+      <value>7a576bbd-3683-4c69-8259-b03d2c59db04.e6e738fa-d1b6-42ee-8864-26c35651f974</value>
+    </typesFilterValue>
+    <objectField>0:cb954476-c551-4a06-9bcd-18d67ba47dc8</objectField>
+    <typeField>0:79201015-bfae-463e-81f1-0ae2d3066f3f</typeField>
+    <valueField>0:ab7ef662-71c1-4d51-9f0f-ea8c5ea3df8a</valueField>
+  </characteristics>
+  <createOnInput>Use</createOnInput>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>11</numberLength>
+  <numberPeriodicity>Year</numberPeriodicity>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.КорректировкаРегистров.Form.ФормаДокумента</defaultObjectForm>
+  <defaultListForm>Document.КорректировкаРегистров.Form.ФормаСписка</defaultListForm>
+  <posting>Deny</posting>
+  <registerRecordsDeletion>AutoDeleteOff</registerRecordsDeletion>
+  <registerRecordsWritingOnPost>WriteModified</registerRecordsWritingOnPost>
+  <sequenceFilling>AutoFillOff</sequenceFilling>
+  <registerRecords>AccumulationRegister.УП_РасчетыСКонтрагентами</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <choiceHistoryOnInput>DontUse</choiceHistoryOnInput>
+  <attributes uuid="cb7ae784-eb1e-41c2-8bbd-f866e6ac03c4">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Пользователь, ответственный за  документ.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Catalog.Пользователи.EmptyRef</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ff02ebf3-5ed8-49ae-ad44-c7aa084019f6">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Произвольный комментарий. </value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="24379920-1017-4d9a-bac3-f9f0fd3b08b1">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="b93a6f54-a315-43b7-8c7b-cac0e0f39980">
+    <name>ФормаВыбораРегистра</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора регистра</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="0d0d375d-3b45-4326-86d5-d97497f415a1">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="fc57eb2d-06d3-431d-a5e1-b1674b968f20">
+    <producedTypes>
+      <objectType typeId="da8312c0-ef8a-4b9a-b918-171e496dbc15" valueTypeId="d77e1419-22c7-4176-889e-23e01f0bf57d"/>
+      <rowType typeId="71a054c9-3594-429a-8a73-430cc99cebc7" valueTypeId="bf8cc0ab-44f8-401b-afb8-7f09d546ad8d"/>
+    </producedTypes>
+    <name>ТаблицаРегистров</name>
+    <synonym>
+      <key>ru</key>
+      <value>Таблица регистров</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="e3cfcb0a-5297-4f8e-8064-923fcb4f13d1">
+      <name>Имя</name>
+      <synonym>
+        <key>ru</key>
+        <value>Имя</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>255</length>
+        </stringQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Имя регистра, которому скорректированы записи.</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <commands uuid="dd9b1a7c-3cd1-4e56-83b5-53bddd126e57">
+    <name>КорректировкаРегистров</name>
+    <synonym>
+      <key>ru</key>
+      <value>Корректировка регистров</value>
+    </synonym>
+    <group>NavigationPanelSeeAlso</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:Document>

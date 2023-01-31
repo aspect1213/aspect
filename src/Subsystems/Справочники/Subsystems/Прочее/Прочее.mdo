@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="16399c57-23fe-4e71-bf11-b5181fcbe6d4">
+  <name>Прочее</name>
+  <synonym>
+    <key>ru</key>
+    <value>Прочее</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Catalog.Валюты</content>
+  <content>Catalog.СпособыОплат</content>
+  <content>Catalog.ФизическиеЛица</content>
+  <content>Catalog.БизнесРегионы</content>
+  <content>Catalog.Организации</content>
+  <parentSubsystem>Subsystem.Справочники</parentSubsystem>
+</mdclass:Subsystem>

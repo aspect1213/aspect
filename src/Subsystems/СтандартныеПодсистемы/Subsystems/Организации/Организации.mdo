@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cb8da2f3-f8bb-4736-8381-7c153670e3e2">
+  <name>Организации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Организации</value>
+  </synonym>
+  <content>b8a966ba-3452-44df-91d0-7040ecd3e4c2</content>
+  <content>c2ef8d6b-de7b-430d-ac30-76cdaf0579c2</content>
+  <content>8ca0258c-96d8-4a12-b94f-db968195ee0a</content>
+  <content>0a646724-b49d-42cd-82e6-e800466ed127</content>
+  <content>ab0b6824-99ba-4b8d-857d-ed8ef017d499</content>
+  <content>Constant.ИспользоватьНесколькоОрганизаций</content>
+  <content>Constant.НеИспользоватьНесколькоОрганизаций</content>
+  <content>d02fe5f5-412c-4c4f-bfc7-c1d7206cd092</content>
+  <content>6ac484a9-4d96-4521-9b8c-66212a365725</content>
+  <parentSubsystem>Subsystem.СтандартныеПодсистемы</parentSubsystem>
+</mdclass:Subsystem>

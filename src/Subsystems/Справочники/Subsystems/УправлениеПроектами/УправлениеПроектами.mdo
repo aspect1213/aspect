@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="febd4185-062c-475c-ad74-64813131daa2">
+  <name>УправлениеПроектами</name>
+  <synonym>
+    <key>ru</key>
+    <value>Управление проектами</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Catalog.Проекты</content>
+  <content>Catalog.Исполнители</content>
+  <content>Catalog.КонфигурацииКлиентов</content>
+  <content>Catalog.ТиповыеПродукты1С</content>
+  <content>4ee70bcd-8e7a-47a3-8c98-b038c9b8e2f8</content>
+  <parentSubsystem>Subsystem.Справочники</parentSubsystem>
+</mdclass:Subsystem>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c543eaec-d4d8-4cda-b1b7-1cbf18ad3529">
+  <producedTypes>
+    <objectType typeId="e57ada64-a1eb-48ed-bf27-91f3b475ff5c" valueTypeId="034b9b2d-f061-4f77-b405-7bca582fb2d5"/>
+    <managerType typeId="992c13b7-7281-48c7-9b9e-981048943779" valueTypeId="5c57ea1a-0597-4ba7-93f7-657a03802847"/>
+  </producedTypes>
+  <name>ПоказательЭффективности_ВремяВыполнения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Показатель эффективности (время выполнения)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ПоказательЭффективности_ВремяВыполнения.Form.ФормаОтчета_РабочийСтол</defaultForm>
+  <mainDataCompositionSchema>Report.ПоказательЭффективности_ВремяВыполнения.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <forms uuid="b88f1f94-4fa5-4047-a931-0259d45e3245">
+    <name>ФормаОтчета_РабочийСтол</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета рабочий стол</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="4c694bf8-ca98-49fa-83bf-817ed0e2974d">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

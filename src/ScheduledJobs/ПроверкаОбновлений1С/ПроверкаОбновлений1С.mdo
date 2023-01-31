@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="82f616a3-d83c-4d1d-8777-54a3af00aeed">
+  <name>ПроверкаОбновлений1С</name>
+  <synonym>
+    <key>ru</key>
+    <value>Проверка обновлений 1С</value>
+  </synonym>
+  <methodName>CommonModule.РегламентыСервер.ПроверкаОбновлений1С</methodName>
+  <description>Проверка обновлений 1С</description>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

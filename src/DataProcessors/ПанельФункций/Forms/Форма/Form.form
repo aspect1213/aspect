@@ -1,0 +1,759 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:form="http://g5.1c.ru/v8/dt/form">
+  <items xsi:type="form:Decoration">
+    <name>НадписьДокументы</name>
+    <id>16</id>
+    <title>
+      <key>ru</key>
+      <value>Документы. Цепочка из 4-х этапов</value>
+    </title>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <extendedTooltip>
+      <name>НадписьДокументыРасширеннаяПодсказка</name>
+      <id>18</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>НадписьДокументыКонтекстноеМеню</name>
+      <id>17</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <type>Label</type>
+    <autoMaxWidth>true</autoMaxWidth>
+    <autoMaxHeight>true</autoMaxHeight>
+    <font xsi:type="core:FontRef">
+      <font>System.DefaultGUIFont</font>
+      <height>22.0</height>
+      <bold>true</bold>
+      <strikeout>false</strikeout>
+    </font>
+    <extInfo xsi:type="form:LabelDecorationExtInfo">
+      <horizontalAlign>Left</horizontalAlign>
+    </extInfo>
+  </items>
+  <items xsi:type="form:Button">
+    <name>СогласованиеПроектов</name>
+    <id>28</id>
+    <title>
+      <key>ru</key>
+      <value>Этап №1. Согласование проектов</value>
+    </title>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <extendedTooltip>
+      <name>СогласованиеПроектовРасширеннаяПодсказка</name>
+      <id>29</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>Hyperlink</type>
+    <commandName>Form.Command.ОткрытьДокументСогласованиеПроектов</commandName>
+    <representation>Auto</representation>
+    <autoMaxWidth>true</autoMaxWidth>
+    <autoMaxHeight>true</autoMaxHeight>
+    <placementArea>UserCmds</placementArea>
+    <font xsi:type="core:AutoFont">
+      <height>20.0</height>
+    </font>
+    <picture xsi:type="core:PictureRef">
+      <picture>CommonPicture.Проекты</picture>
+    </picture>
+    <representationInContextMenu>Auto</representationInContextMenu>
+  </items>
+  <items xsi:type="form:Decoration">
+    <name>Декорация1</name>
+    <id>34</id>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <extendedTooltip>
+      <name>Декорация1РасширеннаяПодсказка</name>
+      <id>36</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>Декорация1КонтекстноеМеню</name>
+      <id>35</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <width>15</width>
+    <autoMaxWidth>true</autoMaxWidth>
+    <height>3</height>
+    <autoMaxHeight>true</autoMaxHeight>
+    <extInfo xsi:type="form:PictureDecorationExtInfo">
+      <picture xsi:type="core:PictureRef">
+        <picture>CommonPicture.СтрелкаВниз</picture>
+      </picture>
+    </extInfo>
+  </items>
+  <items xsi:type="form:Button">
+    <name>ВыполнениеРаботНадПроектом</name>
+    <id>32</id>
+    <title>
+      <key>ru</key>
+      <value>Этап №2. Выполнение работ над проектом</value>
+    </title>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <extendedTooltip>
+      <name>ВыполнениеРаботНадПроектомРасширеннаяПодсказка</name>
+      <id>33</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>Hyperlink</type>
+    <commandName>Form.Command.ОткрытьДокументВыполнениеРаботНадПроектом</commandName>
+    <representation>Auto</representation>
+    <autoMaxWidth>true</autoMaxWidth>
+    <autoMaxHeight>true</autoMaxHeight>
+    <placementArea>UserCmds</placementArea>
+    <font xsi:type="core:AutoFont">
+      <height>20.0</height>
+    </font>
+    <picture xsi:type="core:PictureRef">
+      <picture>CommonPicture.ВыполнениеРабот</picture>
+    </picture>
+    <representationInContextMenu>Auto</representationInContextMenu>
+  </items>
+  <items xsi:type="form:Button">
+    <name>ОткрытьДокументРасходыНаПроекты</name>
+    <id>45</id>
+    <title>
+      <key>ru</key>
+      <value>2.1. Расходы на проекты</value>
+    </title>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <extendedTooltip>
+      <name>ОткрытьДокументРасходыНаПроектыРасширеннаяПодсказка</name>
+      <id>46</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>Hyperlink</type>
+    <commandName>Form.Command.ОткрытьДокументРасходыНаПроекты</commandName>
+    <representation>Auto</representation>
+    <autoMaxWidth>true</autoMaxWidth>
+    <autoMaxHeight>true</autoMaxHeight>
+    <placementArea>UserCmds</placementArea>
+    <font xsi:type="core:AutoFont">
+      <height>18.0</height>
+    </font>
+    <representationInContextMenu>Auto</representationInContextMenu>
+  </items>
+  <items xsi:type="form:Decoration">
+    <name>Декорация2</name>
+    <id>37</id>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <extendedTooltip>
+      <name>Декорация2РасширеннаяПодсказка</name>
+      <id>39</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>Декорация2КонтекстноеМеню</name>
+      <id>38</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <width>25</width>
+    <autoMaxWidth>true</autoMaxWidth>
+    <height>3</height>
+    <autoMaxHeight>true</autoMaxHeight>
+    <extInfo xsi:type="form:PictureDecorationExtInfo">
+      <picture xsi:type="core:PictureRef">
+        <picture>CommonPicture.СтрелкаВниз</picture>
+      </picture>
+    </extInfo>
+  </items>
+  <items xsi:type="form:Button">
+    <name>ВыполнениеПроектов</name>
+    <id>30</id>
+    <title>
+      <key>ru</key>
+      <value>Этап №3. Выполнение проектов</value>
+    </title>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <extendedTooltip>
+      <name>ВыполнениеПроектовРасширеннаяПодсказка</name>
+      <id>31</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>Hyperlink</type>
+    <commandName>Form.Command.ОткрытьДокументВыполнениеПроектов</commandName>
+    <representation>Auto</representation>
+    <autoMaxWidth>true</autoMaxWidth>
+    <autoMaxHeight>true</autoMaxHeight>
+    <placementArea>UserCmds</placementArea>
+    <font xsi:type="core:AutoFont">
+      <height>20.0</height>
+    </font>
+    <picture xsi:type="core:PictureRef">
+      <picture>CommonPicture.ВыполнениеПроектов</picture>
+    </picture>
+    <representationInContextMenu>Auto</representationInContextMenu>
+  </items>
+  <items xsi:type="form:Decoration">
+    <name>Декорация3</name>
+    <id>40</id>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <extendedTooltip>
+      <name>Декорация3РасширеннаяПодсказка</name>
+      <id>42</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>Декорация3КонтекстноеМеню</name>
+      <id>41</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <width>35</width>
+    <autoMaxWidth>true</autoMaxWidth>
+    <height>3</height>
+    <autoMaxHeight>true</autoMaxHeight>
+    <extInfo xsi:type="form:PictureDecorationExtInfo">
+      <picture xsi:type="core:PictureRef">
+        <picture>CommonPicture.СтрелкаВниз</picture>
+      </picture>
+    </extInfo>
+  </items>
+  <items xsi:type="form:Button">
+    <name>ПоступлениеОплатыОтКонтрагента</name>
+    <id>19</id>
+    <title>
+      <key>ru</key>
+      <value>Этап №4. Поступление оплаты от контрагента</value>
+    </title>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <extendedTooltip>
+      <name>ПоступлениеОплатыОтКонтрагентаРасширеннаяПодсказка</name>
+      <id>20</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>Hyperlink</type>
+    <commandName>Form.Command.ОткрытьДокументПоступлениеОплатыОтКонтрагента</commandName>
+    <representation>Auto</representation>
+    <autoMaxWidth>true</autoMaxWidth>
+    <autoMaxHeight>true</autoMaxHeight>
+    <placementArea>UserCmds</placementArea>
+    <font xsi:type="core:AutoFont">
+      <height>20.0</height>
+    </font>
+    <picture xsi:type="core:PictureRef">
+      <picture>CommonPicture.Антидепрессант</picture>
+    </picture>
+    <representationInContextMenu>Auto</representationInContextMenu>
+  </items>
+  <items xsi:type="form:Decoration">
+    <name>НадписьОтчеты</name>
+    <id>21</id>
+    <title>
+      <key>ru</key>
+      <value>Отчеты</value>
+    </title>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <extendedTooltip>
+      <name>НадписьОтчетыРасширеннаяПодсказка</name>
+      <id>23</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>НадписьОтчетыКонтекстноеМеню</name>
+      <id>22</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <type>Label</type>
+    <autoMaxWidth>true</autoMaxWidth>
+    <autoMaxHeight>true</autoMaxHeight>
+    <font xsi:type="core:FontRef">
+      <font>System.DefaultGUIFont</font>
+      <height>22.0</height>
+      <bold>true</bold>
+      <strikeout>false</strikeout>
+    </font>
+    <extInfo xsi:type="form:LabelDecorationExtInfo">
+      <horizontalAlign>Left</horizontalAlign>
+    </extInfo>
+  </items>
+  <items xsi:type="form:Button">
+    <name>ВзаиморасчетыСКонтрагентами</name>
+    <id>24</id>
+    <title>
+      <key>ru</key>
+      <value>Взаиморасчеты с контрагентами</value>
+    </title>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <extendedTooltip>
+      <name>ВзаиморасчетыСКонтрагентамиРасширеннаяПодсказка</name>
+      <id>25</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>Hyperlink</type>
+    <commandName>Form.Command.ОткрытьОтчетВзаиморасчетыСКонтрагентами</commandName>
+    <representation>PictureAndText</representation>
+    <autoMaxWidth>true</autoMaxWidth>
+    <autoMaxHeight>true</autoMaxHeight>
+    <placementArea>UserCmds</placementArea>
+    <font xsi:type="core:AutoFont">
+      <height>20.0</height>
+    </font>
+    <picture xsi:type="core:PictureRef">
+      <picture>CommonPicture.ВзаиморасчетыСКонтрагентами</picture>
+    </picture>
+    <representationInContextMenu>Auto</representationInContextMenu>
+  </items>
+  <items xsi:type="form:Button">
+    <name>ПоступлениеДенежныхСредств</name>
+    <id>26</id>
+    <title>
+      <key>ru</key>
+      <value>Поступление денежных средств</value>
+    </title>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <extendedTooltip>
+      <name>ПоступлениеДенежныхСредствРасширеннаяПодсказка</name>
+      <id>27</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>Hyperlink</type>
+    <commandName>Form.Command.ОткрытьОтчетПоступлениеДенежныхСредств</commandName>
+    <representation>PictureAndText</representation>
+    <autoMaxWidth>true</autoMaxWidth>
+    <autoMaxHeight>true</autoMaxHeight>
+    <placementArea>UserCmds</placementArea>
+    <font xsi:type="core:AutoFont">
+      <height>20.0</height>
+    </font>
+    <picture xsi:type="core:PictureRef">
+      <picture>CommonPicture.ПодсистемаДеньги</picture>
+    </picture>
+    <representationInContextMenu>Auto</representationInContextMenu>
+  </items>
+  <items xsi:type="form:Button">
+    <name>ОтработкаПоВремени</name>
+    <id>43</id>
+    <title>
+      <key>ru</key>
+      <value>Отработка по времени</value>
+    </title>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <extendedTooltip>
+      <name>ОтработкаПоВремениРасширеннаяПодсказка</name>
+      <id>44</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>Hyperlink</type>
+    <commandName>Form.Command.ОткрытьОтчетОтработкаПоВремени</commandName>
+    <representation>PictureAndText</representation>
+    <autoMaxWidth>true</autoMaxWidth>
+    <autoMaxHeight>true</autoMaxHeight>
+    <placementArea>UserCmds</placementArea>
+    <font xsi:type="core:AutoFont">
+      <height>20.0</height>
+    </font>
+    <picture xsi:type="core:PictureRef">
+      <picture>CommonPicture.Время</picture>
+    </picture>
+    <representationInContextMenu>Auto</representationInContextMenu>
+  </items>
+  <autoCommandBar>
+    <name>ФормаКоманднаяПанель</name>
+    <id>-1</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <horizontalAlign>Left</horizontalAlign>
+  </autoCommandBar>
+  <autoTitle>true</autoTitle>
+  <autoUrl>true</autoUrl>
+  <group>Vertical</group>
+  <autoFillCheck>true</autoFillCheck>
+  <allowFormCustomize>true</allowFormCustomize>
+  <enabled>true</enabled>
+  <showTitle>true</showTitle>
+  <showCloseButton>true</showCloseButton>
+  <attributes>
+    <name>Объект</name>
+    <id>1</id>
+    <valueType>
+      <types>DataProcessorObject.ПанельФункций</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <main>true</main>
+  </attributes>
+  <formCommands>
+    <name>ОткрытьОтчетВзаиморасчетыСКонтрагентами</name>
+    <title>
+      <key>ru</key>
+      <value>Открыть отчет взаиморасчеты с контрагентами</value>
+    </title>
+    <id>1</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Открыть отчет взаиморасчеты с контрагентами</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ОткрытьОтчетВзаиморасчетыСКонтрагентами</name>
+      </handler>
+    </action>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>ОткрытьДокументПоступлениеОплатыОтКонтрагента</name>
+    <title>
+      <key>ru</key>
+      <value>Открыть документ поступление оплаты от контрагента</value>
+    </title>
+    <id>2</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Открыть документ поступление оплаты от контрагента</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ОткрытьДокументПоступлениеОплатыОтКонтрагента</name>
+      </handler>
+    </action>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>ОткрытьОтчетПоступлениеДенежныхСредств</name>
+    <title>
+      <key>ru</key>
+      <value>Открыть отчет поступление денежных средств</value>
+    </title>
+    <id>3</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Открыть отчет поступление денежных средств</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ОткрытьОтчетПоступлениеДенежныхСредств</name>
+      </handler>
+    </action>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>ОткрытьДокументСогласованиеПроектов</name>
+    <title>
+      <key>ru</key>
+      <value>Открыть документ согласование проектов</value>
+    </title>
+    <id>4</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Открыть документ согласование проектов</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ОткрытьДокументСогласованиеПроектов</name>
+      </handler>
+    </action>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>ОткрытьДокументВыполнениеПроектов</name>
+    <title>
+      <key>ru</key>
+      <value>Открыть документ выполнение проектов</value>
+    </title>
+    <id>5</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Открыть документ выполнение проектов</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ОткрытьДокументВыполнениеПроектов</name>
+      </handler>
+    </action>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>ОткрытьДокументВыполнениеРаботНадПроектом</name>
+    <title>
+      <key>ru</key>
+      <value>Открыть документ выполнение работ над проектом</value>
+    </title>
+    <id>6</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Открыть документ выполнение работ над проектом</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ОткрытьДокументВыполнениеРаботНадПроектом</name>
+      </handler>
+    </action>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>ОткрытьОтчетОтработкаПоВремени</name>
+    <title>
+      <key>ru</key>
+      <value>Открыть отчет отработка по времени</value>
+    </title>
+    <id>7</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Открыть отчет отработка по времени</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ОткрытьОтчетОтработкаПоВремени</name>
+      </handler>
+    </action>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>ОткрытьДокументРасходыНаПроекты</name>
+    <title>
+      <key>ru</key>
+      <value>Открыть документ расходы на проекты</value>
+    </title>
+    <id>8</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Открыть документ расходы на проекты</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ОткрытьДокументРасходыНаПроекты</name>
+      </handler>
+    </action>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <commandInterface>
+    <navigationPanel/>
+    <commandBar/>
+  </commandInterface>
+  <extInfo xsi:type="form:ObjectFormExtInfo"/>
+</form:Form>

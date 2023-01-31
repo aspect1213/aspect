@@ -1,0 +1,624 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаЗакрытия</dataPath>
+			<field>ДатаЗакрытия</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата закрытия</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДолгКонтрагента</dataPath>
+			<field>ДолгКонтрагента</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Долг контрагента</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СтоимостьПроекта</dataPath>
+			<field>СтоимостьПроекта</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Стоимость проекта (план)</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВремяВыполнения_План</dataPath>
+			<field>ВремяВыполнения_План</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Время выполнения (план)</v8:content>
+				</v8:item>
+			</title>
+			<presentationExpression>УП_ОбщегоНазначения_Сервер.ПреобразоватьЧислоМинутВСтрокуВремени(ВремяВыполнения_План)</presentationExpression>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">14</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаСогласования</dataPath>
+			<field>ДатаСогласования</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата согласования</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВремяВыполнения_Факт</dataPath>
+			<field>ВремяВыполнения_Факт</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Время выполнения (факт)</v8:content>
+				</v8:item>
+			</title>
+			<presentationExpression>УП_ОбщегоНазначения_Сервер.ПреобразоватьЧислоМинутВСтрокуВремени(ВремяВыполнения_Факт)</presentationExpression>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">14</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>АналитикаУчетаПоКонтрагентам</dataPath>
+			<field>АналитикаУчетаПоКонтрагентам</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаВыполнения</dataPath>
+			<field>ДатаВыполнения</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата выполнения</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+					<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ДЛФ=D</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">10</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Состояние</dataPath>
+			<field>Состояние</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Валюта</dataPath>
+			<field>Валюта</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Контрагент</dataPath>
+			<field>Контрагент</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Контрагент</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Клиент</dataPath>
+			<field>Клиент</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Клиент</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Проект</dataPath>
+			<field>Проект</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проект</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">50</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВыполнитьДо</dataPath>
+			<field>ВыполнитьДо</field>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+					<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">10</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаПолученияАктаВыполненныхРабот</dataPath>
+			<field>ДатаПолученияАктаВыполненныхРабот</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+    УП_СостоянияПроектов_Согласован.АналитикаУчетаПоКонтрагентам КАК АналитикаУчетаПоКонтрагентам
+ПОМЕСТИТЬ ВТ_СписокАналитикУчетаПоКонтрагентам
+ИЗ
+    РегистрСведений.УП_СостоянияПроектов КАК УП_СостоянияПроектов_Согласован
+
+СГРУППИРОВАТЬ ПО
+    УП_СостоянияПроектов_Согласован.АналитикаУчетаПоКонтрагентам
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+    УП_ВремяВыполнениеПроектов_Факт.АналитикаУчетаПоКонтрагентам,
+    СУММА(УП_ВремяВыполнениеПроектов_Факт.ВремяВыполнения) КАК ВремяВыполнения
+ПОМЕСТИТЬ ВТ_ВремяВыполненияПроектов_Факт
+ИЗ
+    РегистрСведений.УП_ВремяВыполнениеПроектов_Факт КАК УП_ВремяВыполнениеПроектов_Факт
+
+СГРУППИРОВАТЬ ПО
+    УП_ВремяВыполнениеПроектов_Факт.АналитикаУчетаПоКонтрагентам
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+    ВТ_СписокАналитикУчетаПоКонтрагентам.АналитикаУчетаПоКонтрагентам КАК АналитикаУчетаПоКонтрагентам,
+    УП_СостоянияПроектов_Согласован.Период КАК ДатаСогласования,
+    УП_СостоянияПроектов_Выполнен.Период КАК ДатаВыполнения,
+    УП_СостоянияПроектов_Закрыт.Период КАК ДатаЗакрытия,
+    ЕСТЬNULL(УП_РасчетыСКонтрагентамиОстатки.СуммаОстаток, 0) КАК ДолгКонтрагента,
+    ЕСТЬNULL(УП_ВремяВыполнениеПроектов_ПланСрезПоследних.ВремяВыполнения, 0) КАК ВремяВыполнения_План,
+    ЕСТЬNULL(ВТ_ВремяВыполненияПроектов_Факт.ВремяВыполнения, 0) КАК ВремяВыполнения_Факт,
+    УП_СостоянияПроектовСрезПоследних.Состояние КАК Состояние,
+    ЕСТЬNULL(УП_СтоимостьПроектовСрезПоследних.Сумма, 0) КАК СтоимостьПроекта,
+    ВТ_СписокАналитикУчетаПоКонтрагентам.АналитикаУчетаПоКонтрагентам.Контрагент КАК Контрагент,
+    ВТ_СписокАналитикУчетаПоКонтрагентам.АналитикаУчетаПоКонтрагентам.Клиент КАК Клиент,
+    ВТ_СписокАналитикУчетаПоКонтрагентам.АналитикаУчетаПоКонтрагентам.Проект КАК Проект,
+    УП_ОбщиеСведенияПоПроектамСрезПоследних.ВыполнитьДо,
+    УП_ОбщиеСведенияПоПроектамСрезПоследних.ДатаПолученияАктаВыполненныхРабот
+    ИЗ
+    ВТ_СписокАналитикУчетаПоКонтрагентам КАК ВТ_СписокАналитикУчетаПоКонтрагентам
+        ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.УП_СостоянияПроектов КАК УП_СостоянияПроектов_Согласован
+        ПО ВТ_СписокАналитикУчетаПоКонтрагентам.АналитикаУчетаПоКонтрагентам = УП_СостоянияПроектов_Согласован.АналитикаУчетаПоКонтрагентам
+            И (УП_СостоянияПроектов_Согласован.Состояние = ЗНАЧЕНИЕ(Перечисление.СостоянияПроектов.Согласован))
+        ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.УП_СостоянияПроектов КАК УП_СостоянияПроектов_Выполнен
+        ПО ВТ_СписокАналитикУчетаПоКонтрагентам.АналитикаУчетаПоКонтрагентам = УП_СостоянияПроектов_Выполнен.АналитикаУчетаПоКонтрагентам
+            И (УП_СостоянияПроектов_Выполнен.Состояние = ЗНАЧЕНИЕ(Перечисление.СостоянияПроектов.Выполнен))
+        ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.УП_СостоянияПроектов КАК УП_СостоянияПроектов_Закрыт
+        ПО ВТ_СписокАналитикУчетаПоКонтрагентам.АналитикаУчетаПоКонтрагентам = УП_СостоянияПроектов_Закрыт.АналитикаУчетаПоКонтрагентам
+            И (УП_СостоянияПроектов_Закрыт.Состояние = ЗНАЧЕНИЕ(Перечисление.СостоянияПроектов.Закрыт))
+        ЛЕВОЕ СОЕДИНЕНИЕ РегистрНакопления.УП_РасчетыСКонтрагентами.Остатки(&amp;ДатаОтчета, ) КАК УП_РасчетыСКонтрагентамиОстатки
+        ПО ВТ_СписокАналитикУчетаПоКонтрагентам.АналитикаУчетаПоКонтрагентам = УП_РасчетыСКонтрагентамиОстатки.АналитикаУчетаПоКонтрагентам
+        ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.УП_ВремяВыполнениеПроектов_План.СрезПоследних(&amp;ДатаОтчета, ) КАК УП_ВремяВыполнениеПроектов_ПланСрезПоследних
+        ПО ВТ_СписокАналитикУчетаПоКонтрагентам.АналитикаУчетаПоКонтрагентам = УП_ВремяВыполнениеПроектов_ПланСрезПоследних.АналитикаУчетаПоКонтрагентам
+        ЛЕВОЕ СОЕДИНЕНИЕ ВТ_ВремяВыполненияПроектов_Факт КАК ВТ_ВремяВыполненияПроектов_Факт
+        ПО ВТ_СписокАналитикУчетаПоКонтрагентам.АналитикаУчетаПоКонтрагентам = ВТ_ВремяВыполненияПроектов_Факт.АналитикаУчетаПоКонтрагентам
+        ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.УП_СостоянияПроектов.СрезПоследних(&amp;ДатаОтчета, ) КАК УП_СостоянияПроектовСрезПоследних
+        ПО ВТ_СписокАналитикУчетаПоКонтрагентам.АналитикаУчетаПоКонтрагентам = УП_СостоянияПроектовСрезПоследних.АналитикаУчетаПоКонтрагентам
+        ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.УП_СтоимостьПроектов.СрезПоследних КАК УП_СтоимостьПроектовСрезПоследних
+        ПО ВТ_СписокАналитикУчетаПоКонтрагентам.АналитикаУчетаПоКонтрагентам = УП_СтоимостьПроектовСрезПоследних.АналитикаУчетаПоКонтрагентам
+        ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.УП_ОбщиеСведенияПоПроектам.СрезПоследних(&amp;ДатаОтчета, ) КАК УП_ОбщиеСведенияПоПроектамСрезПоследних
+        ПО ВТ_СписокАналитикУчетаПоКонтрагентам.АналитикаУчетаПоКонтрагентам = УП_ОбщиеСведенияПоПроектамСрезПоследних.АналитикаУчетаПоКонтрагентам
+        ЛЕВОЕ СОЕДИНЕНИЕ Справочник.ДоговорыКонтрагентов КАК ДоговорыКонтрагентов
+        ПО ВТ_СписокАналитикУчетаПоКонтрагентам.АналитикаУчетаПоКонтрагентам.Контрагент = ДоговорыКонтрагентов.Владелец
+            И (&amp;ДатаОтчета МЕЖДУ ДоговорыКонтрагентов.ДатаНачала И ДоговорыКонтрагентов.ДатаОкончания)
+
+УПОРЯДОЧИТЬ ПО
+    Состояние</query>
+	</dataSet>
+	<calculatedField>
+		<dataPath>Колонка_ВремяВыполнения</dataPath>
+		<expression>""</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Колонка время выполнения</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Колонка_Финансы</dataPath>
+		<expression>""</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Колонка финансы</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>ПревышенСрокВыполнения</dataPath>
+		<expression>ВЫБОР КОГДА ЗНАЧЕНИЕЗАПОЛНЕНО(ДатаВыполнения) ТОГДА ВЫБОР КОГДА ДатаВыполнения &gt; ВыполнитьДо ТОГДА ИСТИНА ИНАЧЕ ЛОЖЬ КОНЕЦ ИНАЧЕ ЛОЖЬ КОНЕЦ</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Превышен срок выполнения</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<totalField>
+		<dataPath>ДолгКонтрагента</dataPath>
+		<expression>Сумма(ДолгКонтрагента)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ВремяВыполнения_План</dataPath>
+		<expression>УП_ОбщегоНазначения_Сервер.ПреобразоватьЧислоМинутВСтрокуВремени(Сумма(ВремяВыполнения_План))</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ВремяВыполнения_Факт</dataPath>
+		<expression>УП_ОбщегоНазначения_Сервер.ПреобразоватьЧислоМинутВСтрокуВремени(Сумма(ВремяВыполнения_Факт))</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СтоимостьПроекта</dataPath>
+		<expression>Сумма(СтоимостьПроекта)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ВыполнитьДо</dataPath>
+		<expression>Максимум(ВыполнитьДо)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ДатаВыполнения</dataPath>
+		<expression>Максимум(ДатаВыполнения)</expression>
+	</totalField>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ДатаОтчета</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата отчета</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>ТекущаяДата()</expression>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Контрагент</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Клиент</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Проект</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВремяВыполнения_План</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВремяВыполнения_Факт</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СтоимостьПроекта</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДолгКонтрагента</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:left xsi:type="dcscor:Field">Состояние</dcsset:left>
+					<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+					<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.СостоянияПроектов.Закрыт</dcsset:right>
+				</dcsset:item>
+			</dcsset:filter>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>АналитикаУчетаПоКонтрагентам.Контрагент</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>АналитикаУчетаПоКонтрагентам.Клиент</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>АналитикаУчетаПоКонтрагентам.Проект</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+			</dcsset:order>
+			<dcsset:conditionalAppearance>
+				<dcsset:item>
+					<dcsset:selection/>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Состояние</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.СостоянияПроектов.Выполнен</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ЦветФона</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">web:LightGreen</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>ВремяВыполнения_План</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ВремяВыполнения_Факт</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ДолгКонтрагента</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>СтоимостьПроекта</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ВыполнитьДо</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ДатаВыполнения</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter/>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:HorizontalAlign">Right</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+			</dcsset:conditionalAppearance>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МакетОформления</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">Море</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ГоризонтальноеРасположениеОбщихИтогов</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>ВертикальноеРасположениеОбщихИтогов</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьПараметрыДанных</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemTable">
+				<dcsset:column>
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Колонка_ВремяВыполнения</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>Колонка_ВремяВыполнения</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ВремяВыполнения_План</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ВремяВыполнения_Факт</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:conditionalAppearance>
+						<dcsset:item>
+							<dcsset:selection>
+								<dcsset:item>
+									<dcsset:field>Колонка_ВремяВыполнения</dcsset:field>
+								</dcsset:item>
+							</dcsset:selection>
+							<dcsset:filter/>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+								</dcscor:item>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:use>false</dcscor:use>
+									<dcscor:parameter>ВертикальноеПоложение</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
+								</dcscor:item>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>Текст</dcscor:parameter>
+									<dcscor:value xsi:type="v8:LocalStringType">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Время выполнения</v8:content>
+										</v8:item>
+									</dcscor:value>
+								</dcscor:item>
+							</dcsset:appearance>
+						</dcsset:item>
+					</dcsset:conditionalAppearance>
+				</dcsset:column>
+				<dcsset:column>
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Колонка_Финансы</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>Колонка_Финансы</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>СтоимостьПроекта</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>НДФЛ</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ДолгКонтрагента</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:conditionalAppearance>
+						<dcsset:item>
+							<dcsset:selection>
+								<dcsset:item>
+									<dcsset:field>Колонка_Финансы</dcsset:field>
+								</dcsset:item>
+							</dcsset:selection>
+							<dcsset:filter/>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+								</dcscor:item>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>Текст</dcscor:parameter>
+									<dcscor:value xsi:type="v8:LocalStringType">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Финансы</v8:content>
+										</v8:item>
+									</dcscor:value>
+								</dcscor:item>
+							</dcsset:appearance>
+						</dcsset:item>
+					</dcsset:conditionalAppearance>
+				</dcsset:column>
+				<dcsset:row>
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Контрагент</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+					<dcsset:item>
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>Клиент</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+						</dcsset:groupItems>
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						</dcsset:selection>
+						<dcsset:item>
+							<dcsset:order>
+								<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+							</dcsset:order>
+							<dcsset:selection>
+								<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+							</dcsset:selection>
+							<dcsset:conditionalAppearance>
+								<dcsset:item>
+									<dcsset:selection/>
+									<dcsset:filter>
+										<dcsset:item xsi:type="dcsset:FilterItemComparison">
+											<dcsset:left xsi:type="dcscor:Field">ВремяВыполнения_Факт</dcsset:left>
+											<dcsset:comparisonType>Greater</dcsset:comparisonType>
+											<dcsset:right xsi:type="dcscor:Field">ВремяВыполнения_План</dcsset:right>
+										</dcsset:item>
+									</dcsset:filter>
+									<dcsset:appearance>
+										<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+											<dcscor:parameter>ЦветТекста</dcscor:parameter>
+											<dcscor:value xsi:type="v8ui:Color">style:NegativeTextColor</dcscor:value>
+										</dcscor:item>
+									</dcsset:appearance>
+								</dcsset:item>
+							</dcsset:conditionalAppearance>
+						</dcsset:item>
+					</dcsset:item>
+				</dcsset:row>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

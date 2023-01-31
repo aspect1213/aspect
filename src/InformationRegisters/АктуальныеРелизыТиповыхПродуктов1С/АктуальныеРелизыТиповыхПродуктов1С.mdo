@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2eb0e607-3118-4a60-8270-506935cd6616">
+  <producedTypes>
+    <selectionType typeId="c00e0ad6-7324-48e0-91fb-527383ec1204" valueTypeId="0e14ef88-4121-45f9-a07f-486732d09d7e"/>
+    <listType typeId="d518bed9-753f-4f98-abb3-59ade9f0c225" valueTypeId="5e1d55c0-217a-4763-a88d-1408536c5b47"/>
+    <managerType typeId="de4dffbd-db2c-42de-ab69-55cda72829f1" valueTypeId="281944d9-a825-4837-8471-85e94e42cdc8"/>
+    <recordSetType typeId="8ab8d9e3-d7f3-4555-90cb-61e600e4edbe" valueTypeId="f6dd6161-9c38-4561-96ab-ad5447ecb7a0"/>
+    <recordKeyType typeId="9b806e0d-f72b-430b-b435-42c12f35278b" valueTypeId="704b737a-ad83-4780-bfda-d88e49f426f4"/>
+    <recordType typeId="720d556a-92ad-45f3-9778-0d0c82d80920" valueTypeId="ecadd609-6973-4e16-a29d-3a53072ee49f"/>
+    <recordManagerType typeId="73f9ccd4-994c-4f43-a8dd-8af6c0f334a5" valueTypeId="07622909-8642-42bb-aa60-0906ed0c7418"/>
+  </producedTypes>
+  <name>АктуальныеРелизыТиповыхПродуктов1С</name>
+  <synonym>
+    <key>ru</key>
+    <value>Актуальные релизы типовых продуктов 1С</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.АктуальныеРелизыТиповыхПродуктов1С.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.АктуальныеРелизыТиповыхПродуктов1С.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="5ef5b5fe-6a63-4846-9aa2-1f9fb188a29b">
+    <name>НомерВерсии</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер версии</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <dimensions uuid="f36af543-9e86-4836-bafa-f2a59175c1c4">
+    <name>ТиповойПродукт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Типовой продукт</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ТиповыеПродукты1С</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="58609a6d-aa13-4102-b47c-2360221864b4">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="5d611837-2941-479b-b7ac-906b12f7ca33">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

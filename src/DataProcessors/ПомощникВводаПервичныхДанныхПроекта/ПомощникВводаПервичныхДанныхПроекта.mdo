@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="35e4828f-3195-46cd-a6f5-bdeea4c1cdd8">
+  <producedTypes>
+    <objectType typeId="9dce7221-32c8-4a74-ad4a-014eef88b804" valueTypeId="7912dccd-221c-4941-8930-d12d49b19391"/>
+    <managerType typeId="1d1679bc-10a3-424e-9142-3b224ff41a89" valueTypeId="8b33902a-7112-4a45-96b6-eac9924e3513"/>
+  </producedTypes>
+  <name>ПомощникВводаПервичныхДанныхПроекта</name>
+  <synonym>
+    <key>ru</key>
+    <value>Помощник ввода первичных данных проекта</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ПомощникВводаПервичныхДанныхПроекта.Form.Форма</defaultForm>
+  <attributes uuid="e7e51758-8331-4ba8-b3a9-ba35e0a2e2e1">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="b9f4e8ea-6b60-482b-a428-d229ad5bab1e">
+    <name>Клиент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Клиент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Клиенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameterLinks>
+      <name>Отбор.Контрагент</name>
+      <field>DataProcessor.ПомощникВводаПервичныхДанныхПроекта.Attribute.Контрагент</field>
+    </choiceParameterLinks>
+  </attributes>
+  <attributes uuid="d73f41a1-1b7d-4d7e-a4b1-cfe96c121ef0">
+    <name>Проект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проект</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Проекты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameterLinks>
+      <name>Отбор.Клиент</name>
+      <field>DataProcessor.ПомощникВводаПервичныхДанныхПроекта.Attribute.Клиент</field>
+    </choiceParameterLinks>
+    <choiceParameterLinks>
+      <name>Отбор.Контрагент</name>
+      <field>DataProcessor.ПомощникВводаПервичныхДанныхПроекта.Attribute.Контрагент</field>
+    </choiceParameterLinks>
+  </attributes>
+  <forms uuid="ad056202-2714-43f2-83d5-5e10367b609b">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="95638797-02be-48e1-a9d7-608b05647370">
+    <name>ПомощникВводаПервичныхДанныхПроекта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Помощник ввода первичных данных проекта</value>
+    </synonym>
+    <group>NavigationPanelImportant</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:DataProcessor>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cmi:CommandInterface xmlns:cmi="http://g5.1c.ru/v8/dt/cmi">
+  <commandsOrder>
+    <orderFragments>
+      <group>NavigationPanelOrdinary</group>
+      <commands>Catalog.Номенклатура.StandardCommand.OpenList</commands>
+      <commands>0:3732d6f9-2be1-4d1f-b6af-e6f41c153dcb</commands>
+    </orderFragments>
+  </commandsOrder>
+</cmi:CommandInterface>

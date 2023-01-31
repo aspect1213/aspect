@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f076dc89-cd2e-4bf2-be7e-836af7dc697b">
+  <producedTypes>
+    <selectionType typeId="c06e240a-009b-4ce6-a4ec-24c394c2af7b" valueTypeId="c9db7cba-7d11-4d67-89ca-03f979c3ee65"/>
+    <listType typeId="23b95b40-70ac-4ae7-8612-669d7deb9c70" valueTypeId="303ef939-da76-4aa7-8c0c-e4e688bdf131"/>
+    <managerType typeId="321d6ec5-182d-465a-9b5e-4efc78853952" valueTypeId="a9d73c78-171d-462e-ab49-8fa561c1a1ab"/>
+    <recordSetType typeId="556e4adb-073f-4c29-8f4c-94011b376cc3" valueTypeId="dde21a14-1c24-4b0f-84da-39eef279e6ae"/>
+    <recordKeyType typeId="9599e8bb-b9e8-415a-856a-d516abe9bd51" valueTypeId="bdde1307-d9b0-494c-8352-ab88e9d82f7b"/>
+    <recordType typeId="51986235-1b19-42a2-a268-55d20004b099" valueTypeId="faea0b69-7290-4413-a951-32bbcddc2345"/>
+    <recordManagerType typeId="4a0237a3-35c5-4e39-bcd9-ffa44a1b45b1" valueTypeId="05d384c5-2caa-469a-860e-8034bf42e893"/>
+  </producedTypes>
+  <name>УП_ВремяВыполнениеПроектов_Факт</name>
+  <synonym>
+    <key>ru</key>
+    <value>Время выполнение проектов (факт)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="8e0df04d-34a7-411f-a3e1-f0a6f0d4c203">
+    <name>Исполнитель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Исполнитель</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Исполнители</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="29a37c39-01de-4d60-ab81-d4e30a9c1d1e">
+    <name>ВремяВыполнения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Время выполнения</value>
+    </synonym>
+    <comment>(в минутах)</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="fda29fbd-bb9d-4186-b2a8-96c3ad474d72">
+    <name>АналитикаУчетаПоКонтрагентам</name>
+    <synonym>
+      <key>ru</key>
+      <value>Аналитика учета по контрагентам</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КлючиАналитикиУчетаПоКонтрагентам</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Определяет аналитику расчетов с клиентами.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

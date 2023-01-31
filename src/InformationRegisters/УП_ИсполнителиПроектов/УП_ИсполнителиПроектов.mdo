@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="97bfbc0e-ad8d-4865-92bf-b46db87cdf42">
+  <producedTypes>
+    <selectionType typeId="2dfa6580-e7c1-4ad3-960c-f8dba6826691" valueTypeId="b28ce09b-171a-4a4d-9fd5-8777c0f1f41b"/>
+    <listType typeId="6b753490-9021-4f38-9a4c-c44ed626b8de" valueTypeId="6b9ce087-528a-4410-af4e-f68404dd457a"/>
+    <managerType typeId="3223e84e-f5fb-4a5f-959c-76b544abd32c" valueTypeId="a6fd6a71-8566-4117-86c4-e6b399b3f15a"/>
+    <recordSetType typeId="6ce3c44c-7b0c-44a8-abb7-93fc5594f8d0" valueTypeId="ec31bb4e-c5aa-44ce-9305-b47e65d3aa5d"/>
+    <recordKeyType typeId="903e8ab2-5081-42fd-91d5-1e1bdb0223b5" valueTypeId="0ac16aac-2173-47ab-bff9-7f0efc16406c"/>
+    <recordType typeId="7a64b86d-163c-493b-82ee-65bb8c578133" valueTypeId="d2d33a00-f379-45c7-aa77-a4c79a9d72d1"/>
+    <recordManagerType typeId="28c43cae-fabf-4471-b716-8c4f1f10fdf0" valueTypeId="31ebbd95-84ad-4af0-a681-aaf1012a490b"/>
+  </producedTypes>
+  <name>УП_ИсполнителиПроектов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Исполнители проектов план (УП)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="ad518578-8fbf-4ba0-8d62-2de873d2b4c7">
+    <name>ВремяВыполнения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Время выполнения</value>
+    </synonym>
+    <comment>(в минутах)</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="f63d758f-5ee4-44f3-99d4-5a8438b711aa">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="574bcac8-5533-43d6-bb02-0471f054f929">
+    <name>АналитикаУчетаПоКонтрагентам</name>
+    <synonym>
+      <key>ru</key>
+      <value>Аналитика учета по контрагентам</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КлючиАналитикиУчетаПоКонтрагентам</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Определяет аналитику расчетов с клиентами.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="71490853-372c-4e8e-92d6-30a10074ad2f">
+    <name>Исполнитель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Исполнитель</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Исполнители</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

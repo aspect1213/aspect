@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:WebService xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="21f6544a-9227-4b31-bbf2-293b946cac9d">
+  <name>AddressSystem</name>
+  <synonym>
+    <key>ru</key>
+    <value>Address system</value>
+  </synonym>
+  <namespace>http://www.v8.1c.ru/ssl/AddressSystem</namespace>
+  <xdtoPackages xsi:type="core:ReferenceValue">
+    <value>XDTOPackage.АдресныйКлассификатор</value>
+  </xdtoPackages>
+  <xdtoPackages xsi:type="core:ReferenceValue">
+    <value>XDTOPackage.КонтактнаяИнформация</value>
+  </xdtoPackages>
+  <descriptorFileName>AddressSystem.1cws</descriptorFileName>
+  <sessionMaxAge>20</sessionMaxAge>
+  <operations uuid="2cfea4b1-0569-4832-b712-0d8d201580d5">
+    <name>Ping</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ping</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>string</name>
+      <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>Ping</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="97053b27-9c6e-4e17-a27d-48d7cbb80903">
+      <name>Locale</name>
+      <synonym>
+        <key>ru</key>
+        <value>Locale</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+      <nillable>true</nillable>
+    </parameters>
+    <parameters uuid="87442857-4ef7-41c2-9f86-b8ed94bc9d40">
+      <name>ConfigurationName</name>
+      <synonym>
+        <key>ru</key>
+        <value>Configuration name</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="32068cda-69d0-470b-9e36-b125ec112c27">
+    <name>GetActualInfo</name>
+    <synonym>
+      <key>ru</key>
+      <value>Get actual info</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>АдресРФ</name>
+      <nsUri>http://www.v8.1c.ru/ssl/contactinfo</nsUri>
+    </xdtoReturningValueType>
+    <nillable>true</nillable>
+    <procedureName>GetActualInfo</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="9b0bf652-b174-4d27-93c5-15dd656702b6">
+      <name>ID</name>
+      <synonym>
+        <key>ru</key>
+        <value>ID</value>
+      </synonym>
+      <xdtoValueType>
+        <name>UUID</name>
+        <nsUri>http://www.v8.1c.ru/ssl/AddressSystem</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="4012cde7-9fb5-4ade-b5f7-2d791e5bce36">
+      <name>Locale</name>
+      <synonym>
+        <key>ru</key>
+        <value>Locale</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+      <nillable>true</nillable>
+    </parameters>
+    <parameters uuid="9a5fd73f-894f-4611-9e2e-26d8bf39466d">
+      <name>ConfigurationName</name>
+      <synonym>
+        <key>ru</key>
+        <value>Configuration name</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="7346a13a-5b14-4c42-be97-2f375c087dae">
+    <name>GetExtraInfo</name>
+    <synonym>
+      <key>ru</key>
+      <value>Get extra info</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>ExtraInfo</name>
+      <nsUri>http://www.v8.1c.ru/ssl/AddressSystem</nsUri>
+    </xdtoReturningValueType>
+    <nillable>true</nillable>
+    <procedureName>GetExtraInfo</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="2b7cd37f-f6ec-476e-8f8e-e3d0cb946075">
+      <name>ID</name>
+      <synonym>
+        <key>ru</key>
+        <value>ID</value>
+      </synonym>
+      <xdtoValueType>
+        <name>UUID</name>
+        <nsUri>http://www.v8.1c.ru/ssl/AddressSystem</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="d3ddb39f-d418-4884-a194-6a5049a2ba26">
+      <name>Locale</name>
+      <synonym>
+        <key>ru</key>
+        <value>Locale</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+      <nillable>true</nillable>
+    </parameters>
+    <parameters uuid="7a15a2b5-c5a0-451d-b374-bb6d73bc7d51">
+      <name>ConfigurationName</name>
+      <synonym>
+        <key>ru</key>
+        <value>Configuration name</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="08bae66f-fb39-478b-9369-fe7ceb73931a">
+    <name>Autocomplete</name>
+    <synonym>
+      <key>ru</key>
+      <value>Autocomplete</value>
+    </synonym>
+    <comment>Автоподбор уровня адресного классификатора</comment>
+    <xdtoReturningValueType>
+      <name>PresentationList</name>
+      <nsUri>http://www.v8.1c.ru/ssl/AddressSystem</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>Autocomplete</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="3d7d9ed9-c273-44db-86b6-989d84b056fd">
+      <name>Parent</name>
+      <synonym>
+        <key>ru</key>
+        <value>Parent</value>
+      </synonym>
+      <xdtoValueType>
+        <name>UUID</name>
+        <nsUri>http://www.v8.1c.ru/ssl/AddressSystem</nsUri>
+      </xdtoValueType>
+      <nillable>true</nillable>
+    </parameters>
+    <parameters uuid="1e5eea45-0f8a-4962-bb6e-f7a7b901e0a4">
+      <name>Levels</name>
+      <synonym>
+        <key>ru</key>
+        <value>Levels</value>
+      </synonym>
+      <xdtoValueType>
+        <name>Levels</name>
+        <nsUri>http://www.v8.1c.ru/ssl/AddressSystem</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="80cc5484-aa21-4eb4-8272-b089d2b013e9">
+      <name>Text</name>
+      <synonym>
+        <key>ru</key>
+        <value>Text</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="5a39f0b3-63bb-44e2-a8ad-bd99fe8162e9">
+      <name>Limit</name>
+      <synonym>
+        <key>ru</key>
+        <value>Limit</value>
+      </synonym>
+      <xdtoValueType>
+        <name>int</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+      <nillable>true</nillable>
+    </parameters>
+    <parameters uuid="35e9d241-f7db-40cb-aab9-484fa8fb1818">
+      <name>Locale</name>
+      <synonym>
+        <key>ru</key>
+        <value>Locale</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+      <nillable>true</nillable>
+    </parameters>
+    <parameters uuid="7aacd8a6-8564-4114-82b7-00a922756a91">
+      <name>ConfigurationName</name>
+      <synonym>
+        <key>ru</key>
+        <value>Configuration name</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="d3d426d5-e95b-4afa-8c71-2f593f1276cf">
+    <name>Select</name>
+    <synonym>
+      <key>ru</key>
+      <value>Select</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>PresentationList</name>
+      <nsUri>http://www.v8.1c.ru/ssl/AddressSystem</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>Select</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="67365c7c-c40e-4d2f-bbca-b314c1868ab7">
+      <name>Parent</name>
+      <synonym>
+        <key>ru</key>
+        <value>Parent</value>
+      </synonym>
+      <xdtoValueType>
+        <name>UUID</name>
+        <nsUri>http://www.v8.1c.ru/ssl/AddressSystem</nsUri>
+      </xdtoValueType>
+      <nillable>true</nillable>
+    </parameters>
+    <parameters uuid="93566e25-e199-4300-a692-cf5886139963">
+      <name>Level</name>
+      <synonym>
+        <key>ru</key>
+        <value>Level</value>
+      </synonym>
+      <xdtoValueType>
+        <name>int</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="210f85b1-393b-4b5c-b11e-cfd18888204a">
+      <name>Base</name>
+      <synonym>
+        <key>ru</key>
+        <value>Base</value>
+      </synonym>
+      <xdtoValueType>
+        <name>UUID</name>
+        <nsUri>http://www.v8.1c.ru/ssl/AddressSystem</nsUri>
+      </xdtoValueType>
+      <nillable>true</nillable>
+    </parameters>
+    <parameters uuid="17190e81-4d85-4351-97cf-508326aef5de">
+      <name>Sort</name>
+      <synonym>
+        <key>ru</key>
+        <value>Sort</value>
+      </synonym>
+      <xdtoValueType>
+        <name>SortDirection</name>
+        <nsUri>http://www.v8.1c.ru/ssl/AddressSystem</nsUri>
+      </xdtoValueType>
+      <nillable>true</nillable>
+    </parameters>
+    <parameters uuid="7c0eda05-7eb2-4f42-b229-3e5a4f2a5131">
+      <name>Limit</name>
+      <synonym>
+        <key>ru</key>
+        <value>Limit</value>
+      </synonym>
+      <xdtoValueType>
+        <name>int</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+      <nillable>true</nillable>
+    </parameters>
+    <parameters uuid="f7e6ef78-6e28-4108-b2b8-9797f0a4f5e9">
+      <name>Locale</name>
+      <synonym>
+        <key>ru</key>
+        <value>Locale</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+      <nillable>true</nillable>
+    </parameters>
+    <parameters uuid="2ef3a2b4-e274-45a3-acbf-618498dc5462">
+      <name>ConfigurationName</name>
+      <synonym>
+        <key>ru</key>
+        <value>Configuration name</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="6caf8c52-a859-41fe-b9b3-6d91ec018e0b">
+    <name>SelectByPostalCode</name>
+    <synonym>
+      <key>ru</key>
+      <value>Select by postal code</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>PresentationList</name>
+      <nsUri>http://www.v8.1c.ru/ssl/AddressSystem</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>SelectByPostalCode</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="1b03c1a9-c510-46e4-80b0-0c157bfa1adf">
+      <name>PostalCode</name>
+      <synonym>
+        <key>ru</key>
+        <value>Postal code</value>
+      </synonym>
+      <xdtoValueType>
+        <name>int</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="fb7a5957-63ee-411a-b646-a2fc8c52f446">
+      <name>Levels</name>
+      <synonym>
+        <key>ru</key>
+        <value>Levels</value>
+      </synonym>
+      <xdtoValueType>
+        <name>Levels</name>
+        <nsUri>http://www.v8.1c.ru/ssl/AddressSystem</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="b6d02a0a-2836-4b9a-b26a-2ebc19542bcb">
+      <name>Base</name>
+      <synonym>
+        <key>ru</key>
+        <value>Base</value>
+      </synonym>
+      <xdtoValueType>
+        <name>UUID</name>
+        <nsUri>http://www.v8.1c.ru/ssl/AddressSystem</nsUri>
+      </xdtoValueType>
+      <nillable>true</nillable>
+    </parameters>
+    <parameters uuid="3b34aff0-8d90-4616-a9a4-ea55afcd01a7">
+      <name>Sort</name>
+      <synonym>
+        <key>ru</key>
+        <value>Sort</value>
+      </synonym>
+      <xdtoValueType>
+        <name>SortDirection</name>
+        <nsUri>http://www.v8.1c.ru/ssl/AddressSystem</nsUri>
+      </xdtoValueType>
+      <nillable>true</nillable>
+    </parameters>
+    <parameters uuid="1c4a606d-835e-45d9-a176-b7d7031c4c85">
+      <name>Limit</name>
+      <synonym>
+        <key>ru</key>
+        <value>Limit</value>
+      </synonym>
+      <xdtoValueType>
+        <name>int</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+      <nillable>true</nillable>
+    </parameters>
+    <parameters uuid="06e31fb0-df76-433f-a5bb-c1186aca5c3e">
+      <name>Locale</name>
+      <synonym>
+        <key>ru</key>
+        <value>Locale</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+      <nillable>true</nillable>
+    </parameters>
+    <parameters uuid="1aa54e85-ecac-4c4f-9b08-5e4ee271ceb5">
+      <name>ConfigurationName</name>
+      <synonym>
+        <key>ru</key>
+        <value>Configuration name</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="b7d1aa26-1af7-4909-aba4-1b67debae031">
+    <name>Analyze</name>
+    <synonym>
+      <key>ru</key>
+      <value>Analyze</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>AddressAnalysisResult</name>
+      <nsUri>http://www.v8.1c.ru/ssl/AddressSystem</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>Analyze</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="da3d8fa8-50b8-4847-bd9f-765a0f1e628b">
+      <name>Values</name>
+      <synonym>
+        <key>ru</key>
+        <value>Values</value>
+      </synonym>
+      <xdtoValueType>
+        <name>AddressList</name>
+        <nsUri>http://www.v8.1c.ru/ssl/AddressSystem</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="efb0c9bd-f509-4bdd-8793-f5aa9e0a615b">
+      <name>Locale</name>
+      <synonym>
+        <key>ru</key>
+        <value>Locale</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+      <nillable>true</nillable>
+    </parameters>
+    <parameters uuid="66c8b395-0252-4093-8cfc-cf5791f6f45b">
+      <name>CheckAsKladr</name>
+      <synonym>
+        <key>ru</key>
+        <value>Check as kladr</value>
+      </synonym>
+      <xdtoValueType>
+        <name>boolean</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+      <nillable>true</nillable>
+    </parameters>
+    <parameters uuid="0a3a0f21-9433-4c45-84e0-7309c43c21e7">
+      <name>ConfigurationName</name>
+      <synonym>
+        <key>ru</key>
+        <value>Configuration name</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+</mdclass:WebService>

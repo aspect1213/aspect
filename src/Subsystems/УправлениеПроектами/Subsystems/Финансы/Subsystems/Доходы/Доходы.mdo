@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fd143beb-cfce-487c-b1e5-dbd0ff0e4b8c">
+  <name>Доходы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Доходы</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Document.ПоступлениеОплатыОтКонтрагента</content>
+  <parentSubsystem>Subsystem.УправлениеПроектами.Subsystem.Финансы</parentSubsystem>
+</mdclass:Subsystem>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FunctionalOption xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bd66fd46-1260-421e-b131-e27935b7a66c">
+  <name>ИспользоватьБизнесРегионы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать бизнес-регионы</value>
+  </synonym>
+  <location>Constant.ИспользоватьБизнесРегионы</location>
+  <privilegedGetMode>true</privilegedGetMode>
+  <content>Catalog.БизнесРегионы</content>
+  <content>Catalog.Контрагенты.Attribute.БизнесРегион</content>
+  <content>Catalog.Клиенты.Attribute.БизнесРегион</content>
+</mdclass:FunctionalOption>
