@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1b022048-e380-4749-afc4-d50ff243ee69">
+  <producedTypes>
+    <objectType typeId="39fbc879-fa62-460c-aae0-b08559f25797" valueTypeId="fa00d3a7-b8db-4159-88e5-eb93014c50ab"/>
+    <managerType typeId="a014c656-6f19-4074-9748-d4d332dff16c" valueTypeId="f9319265-8f3c-4c59-bc67-7077e005b057"/>
+  </producedTypes>
+  <name>Тестовая2</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тестовая2</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+</mdclass:DataProcessor>
