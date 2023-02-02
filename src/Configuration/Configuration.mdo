@@ -777,6 +777,7 @@
   <dataProcessors>DataProcessor.Сканирование</dataProcessors>
   <dataProcessors>DataProcessor.УдалениеПомеченныхОбъектов</dataProcessors>
   <dataProcessors>DataProcessor.ПомощникСозданияПроектовСопровождения</dataProcessors>
+  <dataProcessors>DataProcessor.Тестовая</dataProcessors>
   <informationRegisters>InformationRegister.АдресныеОбъекты</informationRegisters>
   <informationRegisters>InformationRegister.АктуальныеРелизыТиповыхПродуктов1С</informationRegisters>
   <informationRegisters>InformationRegister.БезопасноеХранилищеДанных</informationRegisters>
