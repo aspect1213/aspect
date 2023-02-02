@@ -778,6 +778,7 @@
   <dataProcessors>DataProcessor.УдалениеПомеченныхОбъектов</dataProcessors>
   <dataProcessors>DataProcessor.ПомощникСозданияПроектовСопровождения</dataProcessors>
   <dataProcessors>DataProcessor.Тестовая</dataProcessors>
+  <dataProcessors>DataProcessor.Тестовая2</dataProcessors>
   <informationRegisters>InformationRegister.АдресныеОбъекты</informationRegisters>
   <informationRegisters>InformationRegister.АктуальныеРелизыТиповыхПродуктов1С</informationRegisters>
   <informationRegisters>InformationRegister.БезопасноеХранилищеДанных</informationRegisters>
